@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+<defs><radialGradient id="sky" cx="50%" cy="35%" r="80%"><stop offset="0" stop-color="#3a1c12"/><stop offset="0.6" stop-color="#1a0d09"/><stop offset="1" stop-color="#07080c"/></radialGradient><linearGradient id="bar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eea66f"/><stop offset="1" stop-color="#8a3f1f"/></linearGradient></defs>
+<rect width="1600" height="900" fill="url(#sky)"/>
+<line x1="0" y1="821" x2="1600" y2="821" stroke="#f4e6d4" stroke-opacity="0.06"/>
+<line x1="0" y1="626" x2="1600" y2="626" stroke="#f4e6d4" stroke-opacity="0.06"/>
+<line x1="0" y1="430" x2="1600" y2="430" stroke="#f4e6d4" stroke-opacity="0.06"/>
+<line x1="0" y1="234" x2="1600" y2="234" stroke="#f4e6d4" stroke-opacity="0.06"/>
+<line x1="0" y1="38" x2="1600" y2="38" stroke="#f4e6d4" stroke-opacity="0.06"/>
+<line x1="110" y1="0" x2="110" y2="900" stroke="#f4e6d4" stroke-opacity="0.06"/>
+<line x1="276" y1="0" x2="276" y2="900" stroke="#f4e6d4" stroke-opacity="0.06"/>
+<line x1="441" y1="0" x2="441" y2="900" stroke="#f4e6d4" stroke-opacity="0.06"/>
+<line x1="607" y1="0" x2="607" y2="900" stroke="#f4e6d4" stroke-opacity="0.06"/>
+<line x1="772" y1="0" x2="772" y2="900" stroke="#f4e6d4" stroke-opacity="0.06"/>
+<line x1="938" y1="0" x2="938" y2="900" stroke="#f4e6d4" stroke-opacity="0.06"/>
+<line x1="1104" y1="0" x2="1104" y2="900" stroke="#f4e6d4" stroke-opacity="0.06"/>
+<line x1="1269" y1="0" x2="1269" y2="900" stroke="#f4e6d4" stroke-opacity="0.06"/>
+<line x1="1435" y1="0" x2="1435" y2="900" stroke="#f4e6d4" stroke-opacity="0.06"/>
+<line x1="800" y1="196" x2="1027" y2="308" stroke="#cdb096" stroke-opacity="0.35" stroke-width="3" stroke-linecap="round"/>
+<rect x="880" y="237" width="68" height="28" rx="14" fill="#140b08" fill-opacity="0.9"/>
+<text x="914" y="259" font-family="IBM Plex Mono, monospace" font-size="20" text-anchor="middle" fill="#cdb096" fill-opacity="0.6">2,369</text>
+<line x1="800" y1="196" x2="591" y2="266" stroke="#eea66f" stroke-opacity="1" stroke-width="7" stroke-linecap="round"/>
+<rect x="662" y="216" width="68" height="28" rx="14" fill="#140b08" fill-opacity="0.9"/>
+<text x="696" y="238" font-family="IBM Plex Mono, monospace" font-size="20" text-anchor="middle" fill="#ffd2ad" fill-opacity="1">2,016</text>
+<line x1="800" y1="196" x2="520" y2="116" stroke="#cdb096" stroke-opacity="0.35" stroke-width="3" stroke-linecap="round"/>
+<rect x="626" y="141" width="68" height="28" rx="14" fill="#140b08" fill-opacity="0.9"/>
+<text x="660" y="163" font-family="IBM Plex Mono, monospace" font-size="20" text-anchor="middle" fill="#cdb096" fill-opacity="0.6">2,305</text>
+<line x1="1027" y1="308" x2="1191" y2="352" stroke="#cdb096" stroke-opacity="0.35" stroke-width="3" stroke-linecap="round"/>
+<rect x="1075" y="315" width="68" height="28" rx="14" fill="#140b08" fill-opacity="0.9"/>
+<text x="1109" y="337" font-family="IBM Plex Mono, monospace" font-size="20" text-anchor="middle" fill="#cdb096" fill-opacity="0.6">1,740</text>
+<line x1="1191" y1="352" x2="1439" y2="520" stroke="#cdb096" stroke-opacity="0.35" stroke-width="3" stroke-linecap="round"/>
+<rect x="1281" y="421" width="68" height="28" rx="14" fill="#140b08" fill-opacity="0.9"/>
+<text x="1315" y="443" font-family="IBM Plex Mono, monospace" font-size="20" text-anchor="middle" fill="#cdb096" fill-opacity="0.6">3,043</text>
+<line x1="591" y1="266" x2="539" y2="465" stroke="#eea66f" stroke-opacity="1" stroke-width="7" stroke-linecap="round"/>
+<rect x="531" y="351" width="68" height="28" rx="14" fill="#140b08" fill-opacity="0.9"/>
+<text x="565" y="373" font-family="IBM Plex Mono, monospace" font-size="20" text-anchor="middle" fill="#ffd2ad" fill-opacity="1">1,879</text>
+<line x1="520" y1="116" x2="591" y2="266" stroke="#cdb096" stroke-opacity="0.35" stroke-width="3" stroke-linecap="round"/>
+<rect x="522" y="176" width="68" height="28" rx="14" fill="#140b08" fill-opacity="0.9"/>
+<text x="556" y="198" font-family="IBM Plex Mono, monospace" font-size="20" text-anchor="middle" fill="#cdb096" fill-opacity="0.6">1,486</text>
+<line x1="520" y1="116" x2="207" y2="310" stroke="#cdb096" stroke-opacity="0.35" stroke-width="3" stroke-linecap="round"/>
+<rect x="329" y="198" width="68" height="28" rx="14" fill="#140b08" fill-opacity="0.9"/>
+<text x="363" y="220" font-family="IBM Plex Mono, monospace" font-size="20" text-anchor="middle" fill="#cdb096" fill-opacity="0.6">3,214</text>
+<line x1="207" y1="310" x2="539" y2="465" stroke="#cdb096" stroke-opacity="0.35" stroke-width="3" stroke-linecap="round"/>
+<rect x="339" y="372" width="68" height="28" rx="14" fill="#140b08" fill-opacity="0.9"/>
+<text x="373" y="394" font-family="IBM Plex Mono, monospace" font-size="20" text-anchor="middle" fill="#cdb096" fill-opacity="0.6">3,782</text>
+<line x1="207" y1="310" x2="168" y2="706" stroke="#cdb096" stroke-opacity="0.35" stroke-width="3" stroke-linecap="round"/>
+<rect x="154" y="493" width="68" height="28" rx="14" fill="#140b08" fill-opacity="0.9"/>
+<text x="188" y="515" font-family="IBM Plex Mono, monospace" font-size="20" text-anchor="middle" fill="#cdb096" fill-opacity="0.6">3,616</text>
+<line x1="539" y1="465" x2="168" y2="706" stroke="#cdb096" stroke-opacity="0.35" stroke-width="3" stroke-linecap="round"/>
+<rect x="320" y="571" width="68" height="28" rx="14" fill="#140b08" fill-opacity="0.9"/>
+<text x="354" y="593" font-family="IBM Plex Mono, monospace" font-size="20" text-anchor="middle" fill="#cdb096" fill-opacity="0.6">4,122</text>
+<line x1="1027" y1="308" x2="539" y2="465" stroke="#cdb096" stroke-opacity="0.35" stroke-width="3" stroke-linecap="round"/>
+<rect x="749" y="371" width="68" height="28" rx="14" fill="#140b08" fill-opacity="0.9"/>
+<text x="783" y="393" font-family="IBM Plex Mono, monospace" font-size="20" text-anchor="middle" fill="#cdb096" fill-opacity="0.6">5,337</text>
+<circle cx="800" cy="196" r="16" fill="#eea66f" stroke="#f4e6d4" stroke-width="3"/>
+<text x="826" y="178" font-family="IBM Plex Sans, sans-serif" font-size="24" font-weight="600" text-anchor="start" fill="#f4e6d4">Erebus Montes</text>
+<circle cx="1027" cy="308" r="12" fill="#1a100c" stroke="#f4e6d4" stroke-width="3"/>
+<text x="1027" y="280" font-family="IBM Plex Sans, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#f4e6d4">Olympus Mons</text>
+<circle cx="1191" cy="352" r="12" fill="#1a100c" stroke="#f4e6d4" stroke-width="3"/>
+<text x="1217" y="360" font-family="IBM Plex Sans, sans-serif" font-size="24" font-weight="600" text-anchor="start" fill="#f4e6d4">Ascraeus Mons</text>
+<circle cx="1439" cy="520" r="12" fill="#1a100c" stroke="#f4e6d4" stroke-width="3"/>
+<text x="1439" y="568" font-family="IBM Plex Sans, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#f4e6d4">Valles Marineris</text>
+<circle cx="591" cy="266" r="16" fill="#eea66f" stroke="#f4e6d4" stroke-width="3"/>
+<text x="565" y="254" font-family="IBM Plex Sans, sans-serif" font-size="24" font-weight="600" text-anchor="end" fill="#f4e6d4">Elysium Mons</text>
+<circle cx="520" cy="116" r="12" fill="#1a100c" stroke="#f4e6d4" stroke-width="3"/>
+<text x="520" y="88" font-family="IBM Plex Sans, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#f4e6d4">Utopia Planitia</text>
+<circle cx="539" cy="465" r="16" fill="#eea66f" stroke="#f4e6d4" stroke-width="3"/>
+<text x="539" y="513" font-family="IBM Plex Sans, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#f4e6d4">Gale crater</text>
+<circle cx="207" cy="310" r="12" fill="#1a100c" stroke="#f4e6d4" stroke-width="3"/>
+<text x="181" y="318" font-family="IBM Plex Sans, sans-serif" font-size="24" font-weight="600" text-anchor="end" fill="#f4e6d4">Jezero crater</text>
+<circle cx="168" cy="706" r="12" fill="#1a100c" stroke="#f4e6d4" stroke-width="3"/>
+<text x="194" y="714" font-family="IBM Plex Sans, sans-serif" font-size="24" font-weight="600" text-anchor="start" fill="#f4e6d4">Hellas Planitia</text>
+<rect x="1180" y="838" width="38" height="22" rx="4" fill="url(#bar)" fill-opacity="0.85"/>
+<rect x="1230" y="829" width="38" height="31" rx="4" fill="url(#bar)" fill-opacity="0.85"/>
+<rect x="1280" y="828" width="38" height="32" rx="4" fill="url(#bar)" fill-opacity="0.85"/>
+<rect x="1330" y="804" width="38" height="56" rx="4" fill="url(#bar)" fill-opacity="0.85"/>
+<rect x="1380" y="789" width="38" height="71" rx="4" fill="url(#bar)" fill-opacity="0.85"/>
+<rect x="1430" y="782" width="38" height="78" rx="4" fill="url(#bar)" fill-opacity="0.85"/>
+<rect x="1480" y="727" width="38" height="133" rx="4" fill="url(#bar)" fill-opacity="0.85"/>
+<text x="1010" y="640" font-family="IBM Plex Mono, monospace" font-size="26" fill="#f4e6d4" fill-opacity="0.85">d[v] = min(d[v], d[u] + w(u, v))</text>
+<text x="1010" y="682" font-family="IBM Plex Mono, monospace" font-size="26" fill="#f4e6d4" fill-opacity="0.85">T(n) = 2T(n/2) + O(n)</text>
+<text x="110" y="815" font-family="IBM Plex Mono, monospace" font-size="30" fill="#f4e6d4" fill-opacity="0.85">shortest route: 3,895 km</text>
+<text x="110" y="857" font-family="IBM Plex Mono, monospace" font-size="26" fill="#f4e6d4" fill-opacity="0.85">Dijkstra's algorithm, O((V + E) log V)</text>
+</svg>

@@ -1,0 +1,149 @@
+site_name: Algorithms
+site_url: https://cs.akadian.ca/
+site_description: Computer algorithms by topic, each explained step by step, with code in Python, Java and C++
+repo_url: https://github.com/TTMathCS/cs
+edit_uri: edit/main/docs/
+copyright: 'Part of <a href="https://www.akadian.ca/">Mars – your new home</a>'
+exclude_docs: |
+  README.md
+
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - navigation.sections
+    - navigation.top
+    - toc.integrate
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunset-up
+        name: Mars dawn
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Mars night
+  font: false
+
+extra_css:
+  - fonts/fonts.css
+  - stylesheets/mars.css
+  - stylesheets/cs.css
+  - katex/katex.min.css
+
+extra:
+  homepage: https://www.akadian.ca/
+
+extra_javascript:
+  - javascripts/mars-link.js
+  - javascripts/home-link.js
+  - javascripts/anim.js
+  - katex/katex.min.js
+  - katex/auto-render.min.js
+  - javascripts/math.js
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - tables
+  - admonition
+  - pymdownx.details
+  - md_in_html
+  - attr_list
+  - pymdownx.highlight:
+      line_spans: __span
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.snippets:
+      base_path: [code]
+      check_paths: true
+  - pymdownx.arithmatex:
+      generic: true
+
+# With --strict, a broken link or #anchor stops the build
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn
+  anchors: warn
+
+nav:
+  - Home: index.md
+  - How to read this site: start.md
+  - Foundations:
+      - foundations/index.md
+      - Big-O and running time: foundations/big-o.md
+      - Recursion: foundations/recursion.md
+  - Sorting:
+      - sorting/index.md
+      - Bubble sort: sorting/bubble-sort.md
+      - Selection sort: sorting/selection-sort.md
+      - Insertion sort: sorting/insertion-sort.md
+      - Merge sort: sorting/merge-sort.md
+      - Quicksort: sorting/quicksort.md
+      - Heapsort: sorting/heapsort.md
+      - Counting sort: sorting/counting-sort.md
+      - Radix sort: sorting/radix-sort.md
+  - Searching:
+      - searching/index.md
+      - Binary search: searching/binary-search.md
+      - Binary search on the answer: searching/binary-search-answer.md
+      - Two pointers: searching/two-pointers.md
+      - Sliding window: searching/sliding-window.md
+  - Data structures:
+      - data-structures/index.md
+      - Stack and queue: data-structures/stack-queue.md
+      - Hash table: data-structures/hash-table.md
+      - Binary heap: data-structures/binary-heap.md
+      - Binary search tree: data-structures/bst.md
+      - Union-find: data-structures/union-find.md
+      - Fenwick tree: data-structures/fenwick-tree.md
+      - Segment tree: data-structures/segment-tree.md
+      - Trie: data-structures/trie.md
+  - Graphs:
+      - graphs/index.md
+      - Breadth-first search: graphs/bfs.md
+      - Depth-first search: graphs/dfs.md
+      - Topological sort: graphs/topological-sort.md
+      - Dijkstra's algorithm: graphs/dijkstra.md
+      - Bellman-Ford: graphs/bellman-ford.md
+      - Floyd-Warshall: graphs/floyd-warshall.md
+      - Kruskal's algorithm: graphs/kruskal.md
+      - Prim's algorithm: graphs/prim.md
+      - Strongly connected components: graphs/scc.md
+  - Dynamic programming:
+      - dp/index.md
+      - Fibonacci and the DP idea: dp/fibonacci.md
+      - Coin change: dp/coin-change.md
+      - 0/1 knapsack: dp/knapsack.md
+      - Longest common subsequence: dp/lcs.md
+      - Longest increasing subsequence: dp/lis.md
+      - Edit distance: dp/edit-distance.md
+  - Greedy:
+      - greedy/index.md
+      - Activity selection: greedy/activity-selection.md
+      - Huffman coding: greedy/huffman.md
+  - Strings:
+      - strings/index.md
+      - KMP: strings/kmp.md
+      - Rabin-Karp: strings/rabin-karp.md
+      - Z-algorithm: strings/z-algorithm.md
+  - Number theory:
+      - number-theory/index.md
+      - Euclid's GCD: number-theory/gcd.md
+      - Sieve of Eratosthenes: number-theory/sieve.md
+      - Fast exponentiation: number-theory/fast-power.md
+  - Backtracking:
+      - backtracking/index.md
+      - Subsets and permutations: backtracking/subsets-permutations.md
+      - N-Queens: backtracking/n-queens.md

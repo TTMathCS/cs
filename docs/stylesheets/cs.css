@@ -1,0 +1,89 @@
+/* the algorithm pages: the facts box, code tabs and the step-by-step animations (javascripts/anim.js) */
+:root {
+  --cs-cmp: #eea66f;   /* being compared or looked at */
+  --cs-hot: #ef6a5e;   /* being swapped or changed */
+  --cs-done: #7ccf7f;  /* finished, in its final place */
+  --cs-active: #6fb7ee;/* in the queue, on the stack, inside the window */
+  --cs-path: #c792ea;  /* the answer: a path, a match, a chosen item */
+  --cs-base: rgba(205, 176, 150, 0.45);
+}
+[data-md-color-scheme="default"] {
+  --cs-cmp: #c8692a;
+  --cs-hot: #c62828;
+  --cs-done: #2e7d32;
+  --cs-active: #1f6fb2;
+  --cs-path: #7b3fa6;
+  --cs-base: rgba(122, 102, 86, 0.4);
+}
+
+/* the facts box under each title */
+.md-typeset table.cs-facts, .md-typeset .cs-facts table:not([class]) { font-size: 0.72rem; }
+
+/* the closed "Going deeper" parts share one quiet look (as on cryptography.akadian.ca) */
+.md-typeset details { border: 1px solid var(--md-default-fg-color--lightest) !important; border-radius: 8px; box-shadow: none; }
+.md-typeset details > summary { background: transparent !important; font-weight: 600; }
+.md-typeset details > summary::before { background-color: var(--md-typeset-a-color) !important; }
+.md-typeset details > summary::after { color: var(--md-default-fg-color--light); }
+.md-typeset .katex-display { overflow-x: auto; overflow-y: hidden; padding: 0.2rem 0; }
+
+/* the animation box */
+.cs-anim { margin: 0.6rem 0; }
+.cs-anim__title { font-weight: 600; margin: 0 0 0.3rem; }
+.cs-anim__bar { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 0.5rem; }
+.cs-anim__btn { font: inherit; font-size: 0.75rem; padding: 0.15rem 0.8rem; border-radius: 999px; cursor: pointer;
+  color: var(--md-default-fg-color); border: 1px solid var(--md-default-fg-color--lighter); background: transparent; }
+.cs-anim__btn:hover { border-color: var(--md-typeset-a-color); }
+.cs-anim__btn:disabled { opacity: 0.4; cursor: default; }
+.cs-anim__count { align-self: center; margin-left: 0.4rem; font-size: 0.75rem; color: var(--md-default-fg-color--light); }
+.cs-anim__stage { overflow-x: auto; }
+.cs-svg { display: block; width: 100%; max-width: 36rem; height: auto; }
+.md-typeset .cs-anim__note { margin: 0.4rem 0 0.2rem; font-weight: 600; min-height: 1.5em; }
+.cs-anim__info { font-family: var(--md-code-font-family); font-size: 0.72rem; color: var(--md-default-fg-color--light); }
+
+.cs-bar, .cs-cell { fill: var(--cs-base); }
+.cs-cell { stroke: var(--md-default-fg-color--lighter); stroke-width: 1; }
+.cs-bar.cmp, .cs-cell.cmp { fill: var(--cs-cmp); }
+.cs-bar.hot, .cs-cell.hot { fill: var(--cs-hot); }
+.cs-bar.done, .cs-cell.done { fill: var(--cs-done); }
+.cs-bar.active, .cs-cell.active { fill: var(--cs-active); }
+.cs-bar.path, .cs-cell.path { fill: var(--cs-path); }
+.cs-bar.dim, .cs-cell.dim { opacity: 0.3; }
+.cs-val { fill: var(--md-default-fg-color); font-size: 13px; font-family: var(--md-code-font-family); }
+.cs-idx { fill: var(--md-default-fg-color--light); font-size: 10px; font-family: var(--md-code-font-family); }
+.cs-ptr { fill: var(--md-typeset-a-color); font-size: 11px; font-weight: 700; font-family: var(--md-code-font-family); }
+
+.cs-edge { stroke: var(--md-default-fg-color--lighter); stroke-width: 2; }
+.cs-edge.hot { stroke: var(--cs-cmp); stroke-width: 3.5; }
+.cs-edge.done { stroke: var(--cs-done); stroke-width: 3.5; }
+.cs-edge.path { stroke: var(--cs-path); stroke-width: 4.5; }
+.cs-edge.active { stroke: var(--cs-active); stroke-width: 3; }
+.cs-edge.dim { opacity: 0.25; }
+.cs-arrow { fill: var(--md-default-fg-color--lighter); }
+.cs-arrow.hot { fill: var(--cs-cmp); } .cs-arrow.done { fill: var(--cs-done); } .cs-arrow.path { fill: var(--cs-path); }
+.cs-arrow.active { fill: var(--cs-active); }
+.cs-w { fill: var(--md-default-fg-color--light); font-size: 12px; font-family: var(--md-code-font-family); }
+.cs-w.hot, .cs-w.path { fill: var(--md-default-fg-color); font-weight: 700; }
+.cs-node { fill: var(--md-default-bg-color); stroke: var(--md-default-fg-color--light); stroke-width: 2; }
+.cs-node.cmp { fill: var(--cs-cmp); stroke: var(--cs-cmp); }
+.cs-node.hot { fill: var(--cs-hot); stroke: var(--cs-hot); }
+.cs-node.active { fill: var(--cs-active); stroke: var(--cs-active); }
+.cs-node.done { fill: var(--cs-done); stroke: var(--cs-done); }
+.cs-node.path { fill: var(--cs-path); stroke: var(--cs-path); }
+.cs-node.dim { opacity: 0.35; }
+.cs-nlabel { fill: var(--md-default-fg-color); font-size: 13px; font-weight: 700; font-family: var(--md-code-font-family); pointer-events: none; }
+.cs-node.cmp + .cs-nlabel, .cs-node.hot + .cs-nlabel, .cs-node.active + .cs-nlabel, .cs-node.done + .cs-nlabel, .cs-node.path + .cs-nlabel { fill: #1a100c; }
+.cs-ntag { fill: var(--md-typeset-a-color); font-size: 11px; font-weight: 700; font-family: var(--md-code-font-family); }
+
+.md-typeset table.cs-grid { border-collapse: collapse; font-family: var(--md-code-font-family); font-size: 0.72rem; margin: 0; }
+.md-typeset table.cs-grid th, .md-typeset table.cs-grid td { border: 1px solid var(--md-default-fg-color--lightest);
+  padding: 0.25em 0.55em; text-align: center; min-width: 1.9em; }
+.md-typeset table.cs-grid th { color: var(--md-default-fg-color--light); font-weight: 600; background: var(--mars-panel); }
+.md-typeset table.cs-grid td.cmp { background: var(--cs-cmp); color: #1a100c; }
+.md-typeset table.cs-grid td.hot { background: var(--cs-hot); color: #fff; }
+.md-typeset table.cs-grid td.done { background: var(--cs-done); color: #1a100c; }
+.md-typeset table.cs-grid td.active { background: var(--cs-active); color: #fff; }
+.md-typeset table.cs-grid td.path { background: var(--cs-path); color: #fff; }
+.md-typeset table.cs-grid td.dim { opacity: 0.35; }
+
+/* topic tables on the index pages */
+.md-typeset .cs-topics td:first-child { white-space: nowrap; }
