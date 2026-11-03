@@ -81,6 +81,38 @@ validation:
 nav:
   - Home: index.md
   - How to read this site: start.md
+  # books: start
+  - Books:
+      - books/index.md
+      - Algorithms:
+          - books/algorithms/index.md
+          - books/algorithms/01-What-Is-an-Algorithm.md
+          - books/algorithms/02-Measuring-Cost.md
+          - books/algorithms/03-Recursion-and-Induction.md
+          - books/algorithms/04-Lists-Stacks-and-Queues.md
+          - books/algorithms/05-Sorting-by-Comparison.md
+          - books/algorithms/06-Sorting-in-Linear-Time-and-Selection.md
+          - books/algorithms/07-Searching-and-Hashing.md
+          - books/algorithms/08-Trees-and-Balanced-Search-Trees.md
+          - books/algorithms/09-Heaps-and-Priority-Queues.md
+          - books/algorithms/10-Union-Find-and-Range-Queries.md
+          - books/algorithms/11-Divide-and-Conquer.md
+          - books/algorithms/12-Greedy-Algorithms.md
+          - books/algorithms/13-Dynamic-Programming.md
+          - books/algorithms/14-Backtracking-and-Branch-and-Bound.md
+          - books/algorithms/15-Graphs-and-Graph-Search.md
+          - books/algorithms/16-Shortest-Paths.md
+          - books/algorithms/17-Spanning-Trees-Flows-and-Matching.md
+          - books/algorithms/18-String-Algorithms.md
+          - books/algorithms/19-Number-Theoretic-Algorithms.md
+          - books/algorithms/20-Computational-Geometry.md
+          - books/algorithms/21-Randomized-and-Amortized-Analysis.md
+          - books/algorithms/22-NP-Completeness.md
+          - books/algorithms/23-Approximation-and-Parameterized-Algorithms.md
+          - books/algorithms/24-Algorithms-for-Big-Data-and-Many-Processors.md
+          - books/algorithms/25-Where-Algorithms-Go.md
+          - books/algorithms/Glossary.md
+  # books: end
   - Foundations:
       - foundations/index.md
       - Big-O and running time: foundations/big-o.md

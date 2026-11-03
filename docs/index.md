@@ -14,6 +14,15 @@ The picture above is one of them at work: nine real places on Mars joined by roa
 between them, and the shortest route from Erebus Montes to Gale crater found by
 [Dijkstra's algorithm](graphs/dijkstra.md).
 
+## Books { #books }
+
+Want the whole road, not one algorithm at a time? The [Books](books/index.md) are full courses, from the first idea
+to research, with every method built from scratch, proved, traced by hand and tested in code.
+
+| Book | What is in it |
+| --- | --- |
+| [Algorithms](books/algorithms/index.md) | 25 chapters: cost and recursion, sorting, hashing, trees, heaps, design techniques, graphs, strings, number theory, geometry, randomness, NP-completeness, approximation, big data and the open problems |
+
 ## Topics { #topics }
 
 | Topic | What is in it |
