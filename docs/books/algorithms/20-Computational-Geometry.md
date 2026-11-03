@@ -772,7 +772,7 @@ for a range query in two dimensions (Lee and Wong 1977). For points spread fairl
 random queries visited on average 20.7 nodes, against 20 000 distance computations for brute force, and every answer
 matched brute force. In high dimensions (dozens of coordinates, as for image or text embeddings) the pruning test almost
 never succeeds and k-d trees degrade to brute force, the **curse of dimensionality**; there, approximate methods such as
-locality-sensitive hashing and graph-based indexes take over (see the [Machine learning book](../index.md)).
+locality-sensitive hashing and graph-based indexes take over (see the [Machine learning book](../machine-learning/index.md)).
 
 ```python
 --8<-- "books/algorithms/ch20_proximity.py"
@@ -957,4 +957,4 @@ or pay for expensive steps with cheap ones.
 - J. H. Friedman, J. L. Bentley and R. A. Finkel, "An Algorithm for Finding Best Matches in Logarithmic Expected Time", *ACM Transactions on Mathematical Software* 3(3), 1977.
 - J. R. Shewchuk, "Adaptive Precision Floating-Point Arithmetic and Fast Robust Geometric Predicates", *Discrete & Computational Geometry* 18, 1997.
 - L. Kettner, K. Mehlhorn, S. Pion, S. Schirra and C. Yap, "Classroom Examples of Robustness Problems in Geometric Computations", *Computational Geometry* 40, 2008.
-- On this site: [Chapter 11](11-Divide-and-Conquer.md) (closest pair), [Chapter 16](16-Shortest-Paths.md) (searching the graphs that geometry builds), [Chapter 17](17-Spanning-Trees-Flows-and-Matching.md) (minimum spanning trees), [Chapter 19](19-Number-Theoretic-Algorithms.md) (gcds for lattice points), and the [Machine learning book](../index.md) for nearest neighbours in high dimensions. Coordinates, vectors and determinants: https://math.akadian.ca/books/.
+- On this site: [Chapter 11](11-Divide-and-Conquer.md) (closest pair), [Chapter 16](16-Shortest-Paths.md) (searching the graphs that geometry builds), [Chapter 17](17-Spanning-Trees-Flows-and-Matching.md) (minimum spanning trees), [Chapter 19](19-Number-Theoretic-Algorithms.md) (gcds for lattice points), and the [Machine learning book](../machine-learning/index.md) for nearest neighbours in high dimensions. Coordinates, vectors and determinants: https://math.akadian.ca/books/.

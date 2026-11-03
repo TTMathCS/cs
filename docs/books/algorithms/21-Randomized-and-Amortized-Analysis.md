@@ -1210,4 +1210,4 @@ not, and the theory of reductions that explains why they are all equally hard.
   [Big-O](../../foundations/big-o.md); [Chapter 8](08-Trees-and-Balanced-Search-Trees.md) for splay trees,
   [Chapter 23](23-Approximation-and-Parameterized-Algorithms.md) for randomized rounding, and
   [Chapter 24](24-Algorithms-for-Big-Data-and-Many-Processors.md) for sketches built on hashing and sampling. The
-  [Machine learning](../index.md) book uses the same tail bounds for generalization.
+  [Machine learning](../machine-learning/index.md) book uses the same tail bounds for generalization.

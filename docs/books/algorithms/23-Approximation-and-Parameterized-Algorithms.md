@@ -1177,4 +1177,4 @@ online, streams past, lives on disk or is shared among many processors.
 - On this site: [Prim](../../graphs/prim.md), [Kruskal](../../graphs/kruskal.md),
   [knapsack](../../dp/knapsack.md), [Chapter 22](22-NP-Completeness.md),
   [Chapter 14](14-Backtracking-and-Branch-and-Bound.md); the
-  [Machine learning book](../index.md) uses the same LP and local-search ideas for optimisation.
+  [Machine learning book](../machine-learning/index.md) uses the same LP and local-search ideas for optimisation.

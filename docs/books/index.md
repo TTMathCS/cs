@@ -28,6 +28,7 @@ algorithms and learning systems yourself. The chapters link to the topic pages w
 | Book | From | To | |
 | --- | --- | --- | --- |
 | [Algorithms](algorithms/index.md) | What a recipe for a computer is | P versus NP, fine-grained complexity and open problems | 25 chapters |
+| [Machine learning](machine-learning/index.md) | Fitting a straight line | Transformers, diffusion models, learning theory and open problems | 23 chapters |
 
-Two more books are on the way: **Machine learning**, from fitting a line to transformers and diffusion models, and
-**Artificial intelligence**, from search and logic to planning, reasoning under uncertainty and learning agents.
+One more book is on the way: **Artificial intelligence**, from search and logic to planning, reasoning under
+uncertainty and learning agents.

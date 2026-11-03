@@ -1180,5 +1180,5 @@ smallest key, and are faster for it.
 - On this site: the reference pages [binary search tree](../../data-structures/bst.md),
   [binary heap](../../data-structures/binary-heap.md) and [trie](../../data-structures/trie.md) (a tree for strings,
   which [Chapter 18](18-String-Algorithms.md) uses); the [Fibonacci page](../../dp/fibonacci.md) for the numbers of
-  8.3; and the [Machine learning book](../index.md), where decision trees are a different kind of
+  8.3; and the [Machine learning book](../machine-learning/index.md), where decision trees are a different kind of
   tree built from data.

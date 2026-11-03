@@ -22,6 +22,7 @@ to research, with every method built from scratch, proved, traced by hand and te
 | Book | What is in it |
 | --- | --- |
 | [Algorithms](books/algorithms/index.md) | 25 chapters: cost and recursion, sorting, hashing, trees, heaps, design techniques, graphs, strings, number theory, geometry, randomness, NP-completeness, approximation, big data and the open problems |
+| [Machine learning](books/machine-learning/index.md) | 23 chapters: data, linear and logistic models, optimization, evaluation, kernels, SVMs, trees and boosting, Bayesian models, clustering, PCA, neural networks from scratch, CNNs, sequence models, transformers, generative models, learning theory and the frontier |
 
 ## Topics { #topics }
 

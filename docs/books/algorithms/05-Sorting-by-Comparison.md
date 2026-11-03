@@ -1112,5 +1112,5 @@ keys, and finds the median in linear time.
   [Merge sort](../../sorting/merge-sort.md), [Quicksort](../../sorting/quicksort.md),
   [Heapsort](../../sorting/heapsort.md), [Binary heap](../../data-structures/binary-heap.md),
   [Big-O](../../foundations/big-o.md), [Recursion](../../foundations/recursion.md).
-- The other books: [Machine learning](../index.md), where sorting by a learned score is everywhere,
+- The other books: [Machine learning](../machine-learning/index.md), where sorting by a learned score is everywhere,
   and the [math books](https://math.akadian.ca/books/) for induction, sums and probability.

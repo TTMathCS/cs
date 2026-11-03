@@ -112,6 +112,32 @@ nav:
           - books/algorithms/24-Algorithms-for-Big-Data-and-Many-Processors.md
           - books/algorithms/25-Where-Algorithms-Go.md
           - books/algorithms/Glossary.md
+      - Machine learning:
+          - books/machine-learning/index.md
+          - books/machine-learning/01-What-Is-Machine-Learning.md
+          - books/machine-learning/02-Data-and-Features.md
+          - books/machine-learning/03-The-Math-Toolkit.md
+          - books/machine-learning/04-Linear-Regression.md
+          - books/machine-learning/05-Optimization.md
+          - books/machine-learning/06-Classification-and-Logistic-Regression.md
+          - books/machine-learning/07-Evaluating-Models.md
+          - books/machine-learning/08-Overfitting-and-Regularization.md
+          - books/machine-learning/09-Nearest-Neighbours-and-Kernels.md
+          - books/machine-learning/10-Support-Vector-Machines.md
+          - books/machine-learning/11-Decision-Trees-and-Ensembles.md
+          - books/machine-learning/12-Probabilistic-Models.md
+          - books/machine-learning/13-Clustering.md
+          - books/machine-learning/14-Dimensionality-Reduction.md
+          - books/machine-learning/15-Neural-Networks-and-Backpropagation.md
+          - books/machine-learning/16-Training-Deep-Networks.md
+          - books/machine-learning/17-Convolutional-Networks.md
+          - books/machine-learning/18-Sequence-Models.md
+          - books/machine-learning/19-Transformers.md
+          - books/machine-learning/20-Generative-Models.md
+          - books/machine-learning/21-Learning-Theory.md
+          - books/machine-learning/22-Machine-Learning-in-Practice.md
+          - books/machine-learning/23-Where-Machine-Learning-Goes.md
+          - books/machine-learning/Glossary.md
   # books: end
   - Foundations:
       - foundations/index.md

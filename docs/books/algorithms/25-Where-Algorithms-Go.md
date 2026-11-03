@@ -662,7 +662,7 @@ in near-linear time (2022), deterministic primality testing (2002), quasi-polyno
   the category cs.DS (data structures and algorithms) or cs.CC (computational complexity). Read the introductions
   first: they say what was known, what is new and why it matters, which is exactly the habit this book has tried
   to build.
-- **The other books on this shelf.** The [Machine learning book](../index.md) and the
+- **The other books on this shelf.** The [Machine learning book](../machine-learning/index.md) and the
   [Artificial intelligence book](../index.md) take the algorithms of this book, optimisation, search, dynamic
   programming and probability, and build learning and reasoning systems from them; the search and planning that
   let a rover like Perseverance pick its own path across Jezero crater are there too.
@@ -774,7 +774,7 @@ in near-linear time (2022), deterministic primality testing (2002), quasi-polyno
 - Many natural problems remain open, and several old ones have fallen in the last few years.
 
 **Next:** this is the last chapter. Return to the [book's contents](index.md) to revisit any part, or continue with
-the [Machine learning book](../index.md).
+the [Machine learning book](../machine-learning/index.md).
 
 ## Further reading
 
