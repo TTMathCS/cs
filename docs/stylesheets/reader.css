@@ -114,7 +114,15 @@
   .reader-partnav { flex-direction: column; }
   .reader-partnav > span:empty { display: none; }
   .reader-panel { top: 2.8rem; }
+  /* the light / dark switch is in the Aa panel, so the phone header keeps room for the site's name */
+  .md-header__option[data-md-component="palette"] { display: none; }
 }
 @media print {
   .reader-top, .reader-parts, .reader-partnav, .reader-btn, .reader-exit { display: none !important; }
 }
+
+/* phone width: nothing may push the page sideways. KaTeX's hidden copy for screen readers is placed relative to
+   the formula, so a wide formula in a table scrolls inside the table, not the page (as on cryptography). */
+.md-typeset .katex { position: relative; }
+.md-typeset math[display="block"] { display: block; max-width: 100%; overflow-x: auto; overflow-y: hidden; }
+.md-typeset .uoft .step, .md-typeset .uoft .block { max-width: 100%; overflow-x: auto; }
