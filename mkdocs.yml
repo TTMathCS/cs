@@ -138,6 +138,30 @@ nav:
           - books/machine-learning/22-Machine-Learning-in-Practice.md
           - books/machine-learning/23-Where-Machine-Learning-Goes.md
           - books/machine-learning/Glossary.md
+      - Artificial intelligence:
+          - books/ai/index.md
+          - books/ai/01-What-Is-AI.md
+          - books/ai/02-Intelligent-Agents.md
+          - books/ai/03-Uninformed-Search.md
+          - books/ai/04-Heuristic-Search.md
+          - books/ai/05-Local-Search-and-Optimization.md
+          - books/ai/06-Games-and-Adversarial-Search.md
+          - books/ai/07-Constraint-Satisfaction.md
+          - books/ai/08-Propositional-Logic-and-SAT.md
+          - books/ai/09-First-Order-Logic.md
+          - books/ai/10-Planning.md
+          - books/ai/11-Knowledge-Representation.md
+          - books/ai/12-Probabilistic-Reasoning.md
+          - books/ai/13-Reasoning-over-Time.md
+          - books/ai/14-Making-Decisions.md
+          - books/ai/15-Reinforcement-Learning.md
+          - books/ai/16-Natural-Language-Processing.md
+          - books/ai/17-Large-Language-Models.md
+          - books/ai/18-Perception-and-Robotics.md
+          - books/ai/19-Multi-Agent-Systems.md
+          - books/ai/20-Safe-and-Reliable-AI.md
+          - books/ai/21-Where-AI-Goes.md
+          - books/ai/Glossary.md
   # books: end
   - Foundations:
       - foundations/index.md

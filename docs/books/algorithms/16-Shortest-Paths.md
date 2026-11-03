@@ -4069,7 +4069,7 @@ the two heuristics, and is one of the ingredients of the route planners in the n
 A\* came from the Shakey robot project at the Stanford Research Institute: Peter Hart, Nils Nilsson and Bertram
 Raphael published "A Formal Basis for the Heuristic Determination of Minimum Cost Paths" in 1968, with the proof of
 optimality for admissible heuristics. It has been a workhorse of robotics, games and AI search ever since; the
-[AI book](../index.md) uses it for problem solving in state spaces.
+[AI book](../ai/index.md) uses it for problem solving in state spaces.
 
 On Mars, a command from Earth takes 3 to 22 minutes to arrive, so rovers must plan parts of their drives
 themselves. In the mid-2000s, JPL engineers integrated Field D\*, an incremental descendant of A\* that replans
@@ -4381,4 +4381,4 @@ can flow through a network, and how to pair things up.
 - P. L. Frana, "An interview with Edsger W. Dijkstra", *Communications of the ACM* 53(8), 2010.
 - On this site: [Dijkstra's algorithm](../../graphs/dijkstra.md), [Bellman-Ford](../../graphs/bellman-ford.md),
   [Floyd-Warshall](../../graphs/floyd-warshall.md), [Breadth-first search](../../graphs/bfs.md),
-  [Binary heap](../../data-structures/binary-heap.md), and the [AI book](../index.md) for A\* in problem solving.
+  [Binary heap](../../data-structures/binary-heap.md), and the [AI book](../ai/index.md) for A\* in problem solving.

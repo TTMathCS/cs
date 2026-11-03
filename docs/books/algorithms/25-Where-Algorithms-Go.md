@@ -663,7 +663,7 @@ in near-linear time (2022), deterministic primality testing (2002), quasi-polyno
   first: they say what was known, what is new and why it matters, which is exactly the habit this book has tried
   to build.
 - **The other books on this shelf.** The [Machine learning book](../machine-learning/index.md) and the
-  [Artificial intelligence book](../index.md) take the algorithms of this book, optimisation, search, dynamic
+  [Artificial intelligence book](../ai/index.md) take the algorithms of this book, optimisation, search, dynamic
   programming and probability, and build learning and reasoning systems from them; the search and planning that
   let a rover like Perseverance pick its own path across Jezero crater are there too.
 

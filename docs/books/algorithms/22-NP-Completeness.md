@@ -1019,6 +1019,6 @@ to NP-hard problems in polynomial time, or exact answers when a parameter is sma
   [Chapter 21](21-Randomized-and-Amortized-Analysis.md) (randomized algorithms),
   [Chapter 25](25-Where-Algorithms-Go.md) (why P versus NP is hard to settle); the reference pages
   [Knapsack](../../dp/knapsack.md), [Subsets and permutations](../../backtracking/subsets-permutations.md) and
-  [Strongly connected components](../../graphs/scc.md); the [Artificial intelligence](../index.md) book for search
+  [Strongly connected components](../../graphs/scc.md); the [Artificial intelligence](../ai/index.md) book for search
   and SAT-based planning; and [https://cryptography.akadian.ca/book/](https://cryptography.akadian.ca/book/) for
   cryptography built on problems believed hard.

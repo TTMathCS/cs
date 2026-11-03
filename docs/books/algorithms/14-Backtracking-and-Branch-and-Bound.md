@@ -931,4 +931,4 @@ and depth first.
   [Subsets and permutations](../../backtracking/subsets-permutations.md), [Knapsack](../../dp/knapsack.md),
   [Chapter 13](13-Dynamic-Programming.md), [Chapter 22](22-NP-Completeness.md),
   [Chapter 23](23-Approximation-and-Parameterized-Algorithms.md), and the AI book's search chapters
-  ([Artificial intelligence](../index.md)).
+  ([Artificial intelligence](../ai/index.md)).
