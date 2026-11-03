@@ -96,7 +96,7 @@
 /* --- reading mode: no menus, one narrow column --- */
 .reader-exit { display: none; }
 .reader-mode .reader-exit {
-  display: block; position: fixed; z-index: 4; right: .8rem; bottom: .8rem; padding: .45rem .8rem; border-radius: 999px;
+  display: block; position: fixed; z-index: 4; left: 50%; transform: translateX(-50%); bottom: .8rem; padding: .45rem .8rem; border-radius: 999px;
   font: 600 .64rem/1 var(--md-text-font-family, inherit); cursor: pointer; opacity: .8;
   color: var(--md-default-fg-color); background: var(--md-default-bg-color); border: 1px solid var(--md-default-fg-color--lighter);
 }

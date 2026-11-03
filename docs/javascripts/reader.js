@@ -153,7 +153,8 @@
     }
     if (!head) return;
     var a = head.tagName === "A" ? head : head.querySelector("a[href]");
-    crumbs.push({ title: label(head), href: a && norm(a.href) !== here ? a.href : null });
+    var self = !!a && norm(a.href) === here;
+    crumbs.push({ title: label(head), href: a && !self ? a.href : null, self: self });
   });
   var chapter = /^\d{1,3}-/.test(lastSeg) ? nav.filter(function (n) {
     var s = n.path.replace(/\/$/, "").split("/").pop();
@@ -161,11 +162,11 @@
   }) : [];
   var chNo = 0;
   chapter.forEach(function (n, i) { if (n.path === here) chNo = i + 1; });
-  var kind = /\/topics\//.test(here) ? "Lesson" : "Chapter";
+  var kind = !chNo ? "Page" : /\/topics\//.test(here) ? "Lesson" : "Chapter";
 
   var top = el("nav", "reader-top");
   top.setAttribute("aria-label", "Where you are");
-  if (crumbs.length && !crumbs[crumbs.length - 1].href) crumbs.pop(); // a section's own first page
+  if (crumbs.length && crumbs[crumbs.length - 1].self) crumbs.pop(); // a section's own first page
   var trail = el("div", "reader-crumbs");
   crumbs.forEach(function (c) {
     var x = c.href ? el("a", null, c.title) : el("span", null, c.title);
