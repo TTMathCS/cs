@@ -797,7 +797,7 @@ locality-sensitive hashing and graph-based indexes take over (see the [Machine l
 Robots use these structures directly. A path that follows the edges of the Voronoi diagram of the obstacles stays as far
 as possible from all of them, a classical way to plan safe routes; visibility graphs (connect every pair of obstacle
 corners that can see each other, then run a shortest-path search from [Chapter 16](16-Shortest-Paths.md)) give the
-shortest routes that just graze the corners. On Mars, where commands take between about 4 and 24 minutes to arrive, a
+shortest routes that just graze the corners. On Mars, where commands take between about 3 and 22 minutes to arrive, a
 rover cannot wait for a human to approve every metre: Perseverance's AutoNav system builds a map of the terrain ahead and
 plans its own drive around hazards, which needs exactly this kind of fast, robust geometry.
 

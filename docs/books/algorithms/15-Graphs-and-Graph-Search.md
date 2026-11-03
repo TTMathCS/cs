@@ -1252,7 +1252,7 @@ Award in 1986 for their work on the design and analysis of algorithms and data s
 
 Rovers on Mars meet BFS in its most literal form. A rover's planner sees the ground ahead as a grid of cells marked
 safe or hazardous, and the simplest question, "which cells can I reach, and by how few steps?", is a BFS from the
-rover's cell. Because a command from Earth takes 4 to 24 minutes to arrive, rovers such as Perseverance plan many of
+rover's cell. Because a command from Earth takes 3 to 22 minutes to arrive, rovers such as Perseverance plan many of
 their own drives with on-board navigation software instead of waiting for each step to be approved. Real planners
 weigh slopes and rocks with costs, which is a weighted problem: that is the next chapter.
 

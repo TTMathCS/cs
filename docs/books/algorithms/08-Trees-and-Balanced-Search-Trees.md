@@ -1005,7 +1005,7 @@ which stores a list of sorted lists (a cousin of a B-tree with one level). Java 
 `ConcurrentSkipListMap`; C++ has `std::map` (red-black in the common implementations).
 
 Even on Mars these trees work without anyone watching. A rover's planner keeps its candidate waypoints and obstacles
-in ordered structures it must update thousands of times between commands from Earth, which arrive 4 to 24 minutes
+in ordered structures it must update thousands of times between commands from Earth, which arrive 3 to 22 minutes
 late; whatever order the data comes in, the worst-case bounds of this chapter are what make the timing predictable.
 
 ## Check yourself

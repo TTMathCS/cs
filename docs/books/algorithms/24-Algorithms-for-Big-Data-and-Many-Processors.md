@@ -715,7 +715,7 @@ cost is the number of rounds.
 In parallel computing the processors cooperate under one scheduler and share memory or a fast network. In a
 **distributed system** the computers are independent: they communicate only by messages, messages are delayed,
 and computers fail. A database replicated on five machines must still agree on the order of the updates if two of
-them crash. A team on Mars and a control centre on Earth, separated by a one-way light time of 4 to 24 minutes,
+them crash. A team on Mars and a control centre on Earth, separated by a one-way light time of 3 to 22 minutes,
 cannot run a protocol that waits for an answer at every step; that delay is one reason Mars rovers such as
 Perseverance drive with onboard autonomy (AutoNav) instead of being steered from Earth.
 

@@ -4071,7 +4071,7 @@ Raphael published "A Formal Basis for the Heuristic Determination of Minimum Cos
 optimality for admissible heuristics. It has been a workhorse of robotics, games and AI search ever since; the
 [AI book](../index.md) uses it for problem solving in state spaces.
 
-On Mars, a command from Earth takes 4 to 24 minutes to arrive, so rovers must plan parts of their drives
+On Mars, a command from Earth takes 3 to 22 minutes to arrive, so rovers must plan parts of their drives
 themselves. In the mid-2000s, JPL engineers integrated Field D\*, an incremental descendant of A\* that replans
 quickly as the rover's map changes, into the flight software of the rovers Spirit and Opportunity (Carsten and
 co-authors, 2007). Perseverance's AutoNav likewise builds terrain maps from its cameras as it drives and chooses its

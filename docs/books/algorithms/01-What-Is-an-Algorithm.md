@@ -60,7 +60,7 @@ algorithm. In plain words:
 Why insist on all this? Because the gap between "a method a clever person could follow" and "a method a machine can
 follow" is exactly where most mistakes in programming live. A computer cannot notice that a step is ambiguous and ask
 what you meant. It picks one meaning, the one written down, and carries on. The rover example shows why this matters
-in a very practical way. A radio signal takes between about 4 and 24 minutes to travel between Earth and Mars,
+in a very practical way. A radio signal takes between about 3 and 22 minutes to travel between Earth and Mars,
 depending on where the two planets are in their orbits. A driver on Earth cannot steer a rover around a rock in real
 time. So Perseverance's AutoNav software decides for itself, from its own camera images, where it is safe to drive. Every
 one of those decisions is the output of an algorithm that has to be right with no one watching.
