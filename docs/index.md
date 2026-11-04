@@ -33,13 +33,51 @@ between them, and the shortest route from Erebus Montes to Gale crater found by
 
 ## Find your level
 
-| Level | For whom | Where to go |
-|---|---|---|
-| **Beginner** | new to computing, young learners, a class | [Start](first-steps/index.md): the six lessons above |
-| **Intermediate** | students who can read a little code | the [Algorithms](#algorithms) pages (code in Python, Java and C++), the first chapters of each [Book](#books), and the [Topics](topics/index.md) guides |
-| **Expert** | professionals, university and beyond | the later chapters of each Book, the Expert part of each [Topics](topics/index.md) guide, and [What's new](new.md) for the latest research |
+<div class="level-cards" markdown>
 
-Every page shows its level under the title.
+<div class="level-card level-card--1" markdown>
+
+Beginner
+
+New to computing: young learners, a class.
+
+- Six five-minute lessons with cards and paper
+- No computer and no coding needed
+
+[Start here](first-steps/index.md)
+
+</div>
+
+<div class="level-card level-card--2" markdown>
+
+Intermediate
+
+Students who can read a little code.
+
+- [Algorithms](#algorithms): each one with code in Python, Java and C++
+- The first chapters of each [Book](#books)
+
+[Browse algorithms](algorithms/index.md)
+
+</div>
+
+<div class="level-card level-card--3" markdown>
+
+Expert
+
+Professionals, university and beyond.
+
+- [Topics](topics/index.md): from a one-minute summary to expert detail
+- The later chapters of each Book
+- [What's new](new.md): the latest research
+
+[Find a topic](topics/index.md)
+
+</div>
+
+</div>
+
+<p class="level-check-link" markdown>Not sure which one is you? [Take the one-minute level check →](level-check.md)</p>
 
 ## Books { #books }
 

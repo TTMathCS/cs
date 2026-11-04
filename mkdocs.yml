@@ -58,6 +58,7 @@ extra_javascript:
   - javascripts/math.js
   - javascripts/levels.js
   - javascripts/reader.js
+  - javascripts/levelcheck.js
 
 markdown_extensions:
   - toc:
@@ -90,6 +91,7 @@ nav:
   - Home: index.md
   - Start:
       - first-steps/index.md
+      - Find your level: level-check.md
       - first-steps/01-What-Is-an-Algorithm.md
       - first-steps/02-Sorting-Cards.md
       - first-steps/03-Guess-My-Number.md
