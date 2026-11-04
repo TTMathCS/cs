@@ -2,6 +2,7 @@
 // reader.js (the same on cs, math and cryptography) draws the badge; only this file differs per site.
 // path: the page's path; ch: its chapter number in its book (0 if not a chapter); n: chapters in that book.
 window.akadianLevel = function (path, ch, n) {
+  if (/\/first-steps\//.test(path)) return "Start";                        // the beginner track
   if (/\/topics\/./.test(path)) return "All";                         // guides: one part per level
   if (/\/books\/[^\/]+\/\d+-/.test(path) && ch && n) {
     if (ch === n) return "Research";                                   // the last chapter: where the field goes

@@ -88,6 +88,14 @@ validation:
 
 nav:
   - Home: index.md
+  - Start:
+      - first-steps/index.md
+      - first-steps/01-What-Is-an-Algorithm.md
+      - first-steps/02-Sorting-Cards.md
+      - first-steps/03-Guess-My-Number.md
+      - first-steps/04-Finding-the-Way.md
+      - first-steps/05-Repeat-Until-Done.md
+      - first-steps/06-How-a-Computer-Learns.md
   - Topics:
       - topics/index.md
       - Sort and search data: topics/Sorting-and-searching.md

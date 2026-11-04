@@ -18,6 +18,7 @@ between them, and the shortest route from Erebus Montes to Gale crater found by
 
 | | For whom | Where |
 |---|---|---|
+| **New to computing** | young beginners, a class | [Start](first-steps/index.md): six five-minute lessons with cards and paper |
 | **Find a topic** | you have a job to do: sort data, find a route, understand a language model | [Topics](topics/index.md): one page each, from a one-minute summary to expert detail |
 | **Look up an algorithm** | you know its name, or the kind of problem | [Algorithms](#algorithms), each with code in three languages |
 | **Learn it in order** | students, from the first idea to research | the [Books](#books) |
