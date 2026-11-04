@@ -15,7 +15,7 @@ traces examples by hand, and ends with questions whose answers are folded undern
 - **Levels inside a chapter.** The box at the top of each chapter says which sections are beginner, intermediate,
   advanced or expert. On a first read, skip the harder sections and come back later.
 - **Code.** Every program is short Python 3 using only the standard library. Run it, change it, break it. The
-  [topic pages](../../index.md#topics) give many of the same algorithms in Java and C++ too, with animations.
+  [algorithm pages](../../algorithms/index.md) give many of the same algorithms in Java and C++ too, with animations.
 - **Math.** You need school algebra. The chapters explain logarithms, sums and proofs by induction as they go; the
   [math books](https://math.akadian.ca/books/) go further.
 - **Do the questions.** Try each one before opening its answer.
@@ -56,6 +56,6 @@ The [glossary](Glossary.md) defines every term, with a link to the chapter that 
 
 - **New to programming algorithms:** read chapters 1 to 7. That is a first university course's core: cost,
   recursion, sorting, searching and hashing, with every proof written out.
-- **Preparing for interviews or contests:** chapters 4 to 18, with the Check yourself questions; the topic pages
+- **Preparing for interviews or contests:** chapters 4 to 18, with the Check yourself questions; the algorithm pages
   give the same algorithms in Java and C++.
 - **You know the classics and want the theory:** start at chapter 21 and use the glossary to look back.

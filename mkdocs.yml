@@ -87,7 +87,11 @@ validation:
 
 nav:
   - Home: index.md
-  - How to read this site: start.md
+  - Topics:
+      - topics/index.md
+      - Sort and search data: topics/Sorting-and-searching.md
+      - Find the shortest route: topics/Shortest-routes.md
+      - How a large language model works: topics/Language-models.md
   # books: start
   - Books:
       - books/index.md
@@ -170,8 +174,8 @@ nav:
           - books/ai/21-Where-AI-Goes.md
           - books/ai/Glossary.md
   # books: end
-  - Topics:
-      - topics/index.md
+  - Algorithms:
+      - algorithms/index.md
       - Foundations:
           - foundations/index.md
           - Big-O and running time: foundations/big-o.md
@@ -239,3 +243,4 @@ nav:
           - backtracking/index.md
           - Subsets and permutations: backtracking/subsets-permutations.md
           - N-Queens: backtracking/n-queens.md
+  - How to read this site: start.md

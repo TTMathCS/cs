@@ -8,9 +8,9 @@ Three books, each one course from the first idea to the questions researchers ar
 order: every chapter needs only the ones before it. Nothing is a black box: every method is built from scratch in
 code you can run, and every claim comes with its reason.
 
-**Books or topic pages?** The [topic pages](../index.md#topics) are a reference: one algorithm per page, with code in
+**Books or algorithm pages?** The [algorithm pages](../algorithms/index.md) are a reference: one algorithm per page, with code in
 Python, Java and C++ and an animation. A book is a course that teaches you to understand, prove and invent
-algorithms and learning systems yourself. The chapters link to the topic pages wherever one exists.
+algorithms and learning systems yourself. The chapters link to the algorithm pages wherever one exists.
 
 ## How a chapter works
 
