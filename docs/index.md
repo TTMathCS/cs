@@ -5,6 +5,23 @@ title: Algorithms
 
 # Algorithms, topic by topic
 
+<div class="start-band" markdown>
+
+New here? Start with cards and paper
+
+Six short lessons, about five minutes each. No computer and no coding needed.
+
+1. [**What is an algorithm?** *exact steps, like a recipe*](first-steps/01-What-Is-an-Algorithm.md)
+2. [**Sorting cards** *two ways, and which is faster*](first-steps/02-Sorting-Cards.md)
+3. [**Guess my number** *1 to 100 in seven guesses*](first-steps/03-Guess-My-Number.md)
+4. [**Finding the way** *the shortest path through a maze*](first-steps/04-Finding-the-Way.md)
+5. [**Repeat until done** *loops and decisions*](first-steps/05-Repeat-Until-Done.md)
+6. [**How a computer learns** *apples or lemons?*](first-steps/06-How-a-Computer-Learns.md)
+
+[Begin lesson 1 →](first-steps/01-What-Is-an-Algorithm.md)
+
+</div>
+
 An algorithm is a recipe a computer can follow: exact steps that turn an input into the answer. This site goes
 through the classic ones a topic at a time. Every page says what the algorithm does, how it works in plain words,
 gives working code in **Python, Java and C++**, and then opens up, if you want, into a worked example, the math of
@@ -14,11 +31,10 @@ The picture above is one of them at work: nine real places on Mars joined by roa
 between them, and the shortest route from Erebus Montes to Gale crater found by
 [Dijkstra's algorithm](graphs/dijkstra.md).
 
-## Three ways in
+## Already know the basics?
 
 | | For whom | Where |
 |---|---|---|
-| **New to computing** | young beginners, a class | [Start](first-steps/index.md): six five-minute lessons with cards and paper |
 | **Find a topic** | you have a job to do: sort data, find a route, understand a language model | [Topics](topics/index.md): one page each, from a one-minute summary to expert detail |
 | **Look up an algorithm** | you know its name, or the kind of problem | [Algorithms](#algorithms), each with code in three languages |
 | **Learn it in order** | students, from the first idea to research | the [Books](#books) |
