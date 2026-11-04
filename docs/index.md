@@ -31,14 +31,15 @@ The picture above is one of them at work: nine real places on Mars joined by roa
 between them, and the shortest route from Erebus Montes to Gale crater found by
 [Dijkstra's algorithm](graphs/dijkstra.md).
 
-## Already know the basics?
+## Find your level
 
-| | For whom | Where |
+| Level | For whom | Where to go |
 |---|---|---|
-| **Find a topic** | you have a job to do: sort data, find a route, understand a language model | [Topics](topics/index.md): one page each, from a one-minute summary to expert detail |
-| **Look up an algorithm** | you know its name, or the kind of problem | [Algorithms](#algorithms), each with code in three languages |
-| **Learn it in order** | students, from the first idea to research | the [Books](#books) |
-| **Keep up** | researchers, professionals | [What's new](new.md): recent results, dated |
+| **Beginner** | new to computing, young learners, a class | [Start](first-steps/index.md): the six lessons above |
+| **Intermediate** | students who can read a little code | the [Algorithms](#algorithms) pages (code in Python, Java and C++), the first chapters of each [Book](#books), and the [Topics](topics/index.md) guides |
+| **Expert** | professionals, university and beyond | the later chapters of each Book, the Expert part of each [Topics](topics/index.md) guide, and [What's new](new.md) for the latest research |
+
+Every page shows its level under the title.
 
 ## Books { #books }
 

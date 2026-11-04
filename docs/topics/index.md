@@ -2,12 +2,12 @@
 
 *Start from the job you want to do. Each guide is one page in four parts, so you can stop at the part you need.*
 
-| Part | For whom | What it holds |
+| Part | Level | What it holds |
 |---|---|---|
-| **In one minute** | anyone, school age up | the idea in plain words |
-| **Do it** | anyone at a keyboard | working code and the library calls to use |
-| **Expert** | professionals, university | which algorithm when, with its cost; the implementations; common mistakes; best practices |
-| **Now and next** | research | recent results and open questions, with the date it was checked |
+| **In one minute** | Beginner | the idea in plain words |
+| **Do it** | Intermediate | working code and the library calls to use |
+| **Expert** | Expert | which algorithm when, with its cost; the implementations; common mistakes; best practices |
+| **Now and next** | Expert: the latest research | recent results and open questions, with the date it was checked |
 
 Each guide stays short and links to the [Algorithms](../algorithms/index.md) pages and the [Books](../books/index.md) for depth.
 
