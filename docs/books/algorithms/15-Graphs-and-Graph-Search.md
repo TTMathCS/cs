@@ -783,6 +783,8 @@ project takes) is a dynamic program over the topological order, $O(V + E)$; see
 [Chapter 13](13-Dynamic-Programming.md), and shortest paths in DAGs come back in
 [Chapter 16](16-Shortest-Paths.md).
 
+<figure class="play" data-play="topokahn"><span class="ai-tag">AI-created</span><figcaption>Try it: Kahn's method on the course graph above. A course turns gold once all its prerequisites are taken; take one gold course at a time.</figcaption></figure>
+
 ## 15.5 Strongly connected components
 
 *Level: advanced.*

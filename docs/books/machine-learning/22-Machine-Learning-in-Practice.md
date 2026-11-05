@@ -718,6 +718,8 @@ classifies by majority vote over Gaussian-noised copies of the input and proves 
 change. Robustness to natural changes (blur, weather, new cameras) is a related but different problem, closer to
 distribution shift.
 
+<figure class="play" data-play="fgsm"><span class="ai-tag">AI-created</span><figcaption>Try it: the linear explanation of adversarial examples. With many inputs, a nudge too small to see in any one of them adds up and flips the answer. Made-up weights.</figcaption></figure>
+
 ## 22.6 Privacy-preserving learning
 
 *Level: advanced.*
