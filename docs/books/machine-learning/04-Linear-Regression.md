@@ -217,6 +217,8 @@ at 244.5, the mean, and absolute error is best anywhere from 230 to 240, the two
 to least absolute deviations what the mean is to the median: easier to compute, more efficient when errors are
 Gaussian, and less robust when they are not.
 
+<figure class="play" data-play="linefit"><span class="ai-tag">AI-created</span><figcaption><b>Try it.</b> Tap to add points, tap a point to remove it: the line is the least-squares fit, and the red lines are the errors whose squares it makes smallest. The starting points are made up.</figcaption></figure>
+
 ## 4.2 Solving exactly: the normal equations
 
 The line had two weights. A model with $m$ features has $m+1$ weights, and the same method works, written with the

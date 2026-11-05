@@ -182,6 +182,8 @@ say which). Per-class precision and recall are computed one class against the re
 averaging gives each class equal weight (good when rare classes matter), **micro** averaging pools all the counts
 (dominated by the common classes).
 
+<figure class="play" data-play="threshold"><span class="ai-tag">AI-created</span><figcaption><b>Try it.</b> Move the threshold over two made-up score distributions, 100 positives and 900 negatives (each drawn to the same height), and watch precision and recall trade places, while accuracy hardly moves.</figcaption></figure>
+
 ## 7.3 ROC curves, AUC and precision-recall curves
 
 *Level: intermediate.*

@@ -172,6 +172,8 @@ error falls steadily; test error falls, then rises.
 The jaggedness is itself a lesson: with 20 points, a single training set gives a noisy view of how a degree performs.
 To see the underlying law we need to average over many training sets.
 
+<figure class="play" data-play="polyfit"><span class="ai-tag">AI-created</span><figcaption><b>Try it.</b> Fit ten noisy points (red) with polynomials of rising degree. Training error keeps falling; error on fresh points from the same curve (blue) falls, then rises. The data are made up.</figcaption></figure>
+
 ## 8.2 The bias-variance decomposition
 
 *Level: intermediate.*

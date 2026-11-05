@@ -292,6 +292,8 @@ are measured in different units, standardise each to variance 1 first ([Chapter 
 is PCA of the **correlation matrix** instead of the covariance matrix. When all features share a unit and their
 variances mean something (pixels of an image, channels of one spectrometer), leave them unscaled.
 
+<figure class="play" data-play="pca"><span class="ai-tag">AI-created</span><figcaption><b>Try it.</b> Turn the line and watch how much of the spread survives when the points are squashed onto it; the first principal component keeps the most. The points are made up.</figcaption></figure>
+
 ## 14.3 How many components: explained variance
 
 How many components should we keep? The eigenvalues answer directly. The **explained variance ratio** of component

@@ -311,6 +311,8 @@ $f(w_0)=50.5$; along the flat direction $f=\tfrac12(0.99)^{2k}$, and $\tfrac12(0
 $k=882$). Badly conditioned problems are slow, and much of the rest of the chapter is about curing that. This is also
 why Chapter 2 scaled the features: features on wildly different scales make $\kappa$ huge.
 
+<figure class="play" data-play="gdbowl"><span class="ai-tag">AI-created</span><figcaption><b>Try it.</b> Gradient descent on a long, narrow bowl, f(x, y) = x² + 10y². Raise the learning rate past 0.1 and it overshoots across the narrow direction and blows up; momentum smooths the zig-zag.</figcaption></figure>
+
 ## 5.3 Stochastic and mini-batch gradient descent
 
 Most losses in machine learning are averages over the $n$ training examples:

@@ -210,6 +210,8 @@ fast. The next section shows that the speed depends terribly on the dimension.
 the US Air Force School of Aviation Medicine, on nonparametric discrimination. Thomas Cover and Peter Hart's paper
 "Nearest Neighbor Pattern Classification" (1967) proved the factor-two bound and made the method famous.
 
+<figure class="play" data-play="knnk"><span class="ai-tag">AI-created</span><figcaption><b>Try it.</b> Colour the map by the vote of the k nearest points. k = 1 follows every stray point; larger k smooths the regions. The points are made up.</figcaption></figure>
+
 ## 9.2 The curse of dimensionality, shown by computation
 
 Nearest neighbours rely on one assumption: that close points have similar labels. In two dimensions "close" is easy

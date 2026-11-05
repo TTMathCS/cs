@@ -317,6 +317,8 @@ so outliers pull centres towards them. It needs $k$ in advance. And it needs a m
 features; **k-medoids** (Kaufman and Rousseeuw's PAM, 1987) uses actual data points as centres and works with any
 distance at a higher cost.
 
+<figure class="play" data-play="kmeans"><span class="ai-tag">AI-created</span><figcaption><b>Watch it.</b> Lloyd's algorithm: points join the nearest centre, centres move to the middle of their points, repeat. Press New start to drop the centres elsewhere. The points are made up.</figcaption></figure>
+
 ## 13.3 Choosing k: the elbow and the silhouette
 
 How many clusters are there? $J$ cannot answer by itself, because $J$ always goes down when $k$ goes up: with
