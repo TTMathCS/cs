@@ -34,6 +34,8 @@ Move $n$ discs from peg A to peg C using peg B, one disc at a time, never a larg
 3. Move disc $n$ from A to C.
 4. Move $n-1$ discs from B to C (using A).
 
+<figure class="play" data-play="fibtree"><span class="ai-tag">AI-created</span><figcaption><b>Watch the calls pile up.</b> A plain recursive Fibonacci, drawn call by call. The gold calls to fib(2) are the same work done again and again; remembering each answer (a memo) cuts the calls from exponential to about 2n.</figcaption></figure>
+
 ## Code
 
 === "Python"

@@ -29,6 +29,8 @@ A modern computer does very roughly $10^8$ to $10^9$ simple steps per second. So
 $O(n \log n)$ sort finishes in well under a second, while an $O(n^2)$ sort needs $10^{12}$ steps: many minutes or
 hours.
 
+<figure class="play" data-play="growth"><span class="ai-tag">AI-created</span><figcaption><b>Try it.</b> Slide the number of items and watch the growth rates race, with the time at a billion simple steps a second (a round figure for one modern core).</figcaption></figure>
+
 ## How to find the Big-O of code
 
 1. **A simple statement** (assignment, comparison, arithmetic, array access): $O(1)$.

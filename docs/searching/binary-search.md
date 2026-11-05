@@ -30,6 +30,8 @@ answers "where would this go?", "how many values are less than $x$?" and, used t
     3. If `a[mid] < target`, set `lo = mid + 1`; otherwise set `hi = mid - 1`.
 3. Return "not found".
 
+<figure class="play" data-play="halving"><span class="ai-tag">AI-created</span><figcaption><b>Race it.</b> Pick a number from 1 to 1,000 and press Play: the plain scan looks at one item after another, binary search looks at the middle and throws away half each time. It never needs more than 10 looks, because 2<sup>10</sup> = 1,024.</figcaption></figure>
+
 ## Code
 
 === "Python"

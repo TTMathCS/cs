@@ -20,6 +20,8 @@ median, and many greedy algorithms all start with "first, sort".
 **Stable** means equal values keep their original order. It matters when you sort records by one field after
 another, for example by name and then by grade.
 
+<figure class="play" data-play="sortsound"><span class="ai-tag">AI-created</span><figcaption><b>Watch and hear a sort</b> (sound on). Each comparison lights two bars and plays a note as high as the bar. Insertion and bubble sort take about n² comparisons; merge sort and quicksort about n log n, and you can hear how much sooner they finish.</figcaption></figure>
+
 ## Which one should I use?
 
 - **In real code:** your language's built-in sort. Python's `sorted` and Java's sort for objects use **Timsort**

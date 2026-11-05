@@ -24,6 +24,8 @@ discovered each vertex (its *parent*) lets you rebuild that path backwards.
 2. While the queue is not empty: take `u` from the front; for each neighbour `v` with `dist[v] = -1`, set
    `dist[v] = dist[u] + 1`, `parent[v] = u`, and add `v` to the back.
 
+<figure class="play" data-play="maze"><span class="ai-tag">AI-created</span><figcaption><b>Watch the ripple.</b> BFS from the green square reaches every square one step away, then every square two steps away, and so on; when it reaches the gold square, the path back is a shortest one. Press New walls for another grid.</figcaption></figure>
+
 ## Code
 
 === "Python"
