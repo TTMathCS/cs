@@ -12,6 +12,8 @@ So sorting is worth doing when you will search many times. Sorting takes some wo
 
 There are many ways to sort. With cards in your hand you probably slide each new card into its place: that is **insertion sort**, fine for a few cards and slow for a million. The fast methods split the pile, sort the halves and merge them (**merge sort**), or pick a middle card and put smaller ones left and bigger ones right (**quicksort**).
 
+<figure class="play" data-play="sortfirst"><span class="ai-tag">AI-created</span><figcaption><b>Try it.</b> A list of a million items: is it worth sorting before you search? Slide the number of searches. Step counts are rough.</figcaption></figure>
+
 ## Do it
 
 **Use the language's own sort.** It is faster and better tested than anything you will write.

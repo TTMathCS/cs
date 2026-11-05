@@ -12,6 +12,8 @@ Shuffle 8 cards and lay them face up in a row. Put them in order, smallest to la
 
 Shuffle and try the other method. Which needed fewer comparisons? Try Method B on cards that are **already almost in order**.
 
+<figure class="play" data-play="cardsort"><span class="ai-tag">AI-created</span><figcaption><b>Watch it.</b> Methods A and B on the same 8 cards, counting every comparison. Then try them on cards that are almost in order.</figcaption></figure>
+
 ## What's happening
 
 Method A is **selection sort** and Method B is **insertion sort**. With 8 cards, selection sort always makes 28 comparisons. Insertion sort makes up to 28 too, but on cards that are almost in order it needs only about 7.

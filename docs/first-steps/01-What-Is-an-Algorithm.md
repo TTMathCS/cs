@@ -8,6 +8,8 @@ Write instructions for your partner to draw a house: a square with a triangle on
 
 Swap and try again. Did your house come out right the first time?
 
+<figure class="play" data-play="strict"><span class="ai-tag">AI-created</span><figcaption><b>Watch it.</b> A strict partner follows the words exactly. Compare the vague steps with the exact ones.</figcaption></figure>
+
 ## What's happening
 
 An **algorithm** is a list of steps that solves a problem: a recipe, the rules of a game, directions to school. Computers follow algorithms, but they are like the strict partner: they do exactly what the steps say, even when it is silly.

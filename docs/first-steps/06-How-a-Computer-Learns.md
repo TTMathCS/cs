@@ -22,6 +22,8 @@ Now a new fruit arrives: **110 grams, yellowness 7**. Find the dot closest to it
 ??? question "Answer"
     The closest examples are lemons (120 g, 8 and 100 g, 9), so you guess **lemon**.
 
+<figure class="play" data-play="fruit"><span class="ai-tag">AI-created</span><figcaption><b>Try it.</b> The six fruits from the table. Tap anywhere to place a new fruit: the guess is the closest example.</figcaption></figure>
+
 ## What's happening
 
 You just ran **nearest neighbour**, one of the simplest ways a computer learns. Nobody wrote a rule like "lemons are yellow"; the rule came from the **examples**. With more examples and more measurements, the same idea can sort photos, spot spam or suggest a song.

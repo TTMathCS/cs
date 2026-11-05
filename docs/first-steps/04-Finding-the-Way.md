@@ -13,6 +13,8 @@ Now find the shortest way without guessing:
 3. Write **2** in every empty open square next to a 1. Then 3 next to the 2s, and so on.
 4. When you write a number in **F**, stop. Walk back from F, always stepping to a number one smaller. That is a shortest path.
 
+<figure class="play" data-play="ripple"><span class="ai-tag">AI-created</span><figcaption><b>Watch it.</b> The numbering from the steps above on an 8 × 8 grid, then the walk back from F. Tap squares to move the walls.</figcaption></figure>
+
 ## What's happening
 
 The numbers spread out from the start in **rings**, like a ripple in a pond. A square gets its number the first moment the ripple reaches it, so the number is its true distance from the start. This is **breadth-first search**.

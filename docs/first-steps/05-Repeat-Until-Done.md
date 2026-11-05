@@ -21,6 +21,8 @@ Now put the object somewhere the robot can't see, straight ahead. Write a progra
     pick up
     ```
 
+<figure class="play" data-play="robot"><span class="ai-tag">AI-created</span><figcaption><b>Watch it.</b> The robot runs the answer above, however far away the object is. Then try the wrong loop.</figcaption></figure>
+
 ## What's happening
 
 Every program in the world is built from a few ideas:

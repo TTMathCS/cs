@@ -12,6 +12,8 @@ To find the shortest way from home to school, imagine pouring water at home. It 
 
 If every road is equally long, it is even simpler: visit places in rings, one step away, then two, then three (**breadth-first search**). A map app does the same thing at enormous scale, with tricks so it answers in milliseconds.
 
+<figure class="play" data-play="water"><span class="ai-tag">AI-created</span><figcaption><b>Watch it.</b> Water poured at Home spreads along every road at the same speed; the first time it reaches a place, it came the shortest way. Tap a place to choose where to go. The map is made up.</figcaption></figure>
+
 ## Do it
 
 **With a library** (Python, `pip install networkx`)

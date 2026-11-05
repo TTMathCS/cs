@@ -10,6 +10,8 @@ Now play again, but always guess **the middle** of the numbers still possible. S
 
 How many guesses did the middle trick need?
 
+<figure class="play" data-play="guessnum"><span class="ai-tag">AI-created</span><figcaption><b>Play it.</b> The computer has picked a number from 1 to 100. Guess with the slider, or press Middle trick and count how few guesses it needs.</figcaption></figure>
+
 ## What's happening
 
 Every middle guess throws away **half** of the numbers that are left:
