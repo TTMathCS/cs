@@ -491,6 +491,8 @@ Read it carefully, because it teaches more by disagreeing with the legend:
 - In the ecological run the exploiters (ALL-D, JOSS, RANDOM, ALTERNATOR) die out, because once their victims become
   rare they meet each other and score only $P$. The nice strategies remain, each scoring 3 against all the others.
 
+<figure class="play" data-play="ipd"><span class="ai-tag">AI-created</span><figcaption><b>Try it.</b> A small repeated prisoner's dilemma tournament with the payoffs above, 50 rounds per match. Tap a strategy to add or remove it.</figcaption></figure>
+
 ## 19.3 Cooperative games and the Shapley value
 
 So far each player acted alone. Often players can sign binding agreements, form a **coalition**, and act together;

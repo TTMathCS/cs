@@ -1252,6 +1252,8 @@ steady disturbances, which is why it is everywhere, from motor drivers to thermo
 model, such as **model predictive control** (solve a short planning problem at every step, apply the first command,
 repeat), connect control to the planning chapters of this book.
 
+<figure class="play" data-play="pid"><span class="ai-tag">AI-created</span><figcaption><b>Try it.</b> A PID controller driving a rover 10 m up a slope (a made-up model). With P alone it stops short; add I to close the gap, D to calm the overshoot.</figcaption></figure>
+
 ## 18.7 Autonomy on Mars
 
 **The question:** what does all this look like on a real robot that no one can steer in real time?

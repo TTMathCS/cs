@@ -692,6 +692,8 @@ odometry and inertial sensors, and corrected wheel slip with **visual odometry**
 pairs (Maimone, Cheng and Matthies, 2007). Estimators of this kind, which combine predictions with noisy measurements
 step by step, are the subject of this section.
 
+<figure class="play" data-play="kalman"><span class="ai-tag">AI-created</span><figcaption><b>Watch it.</b> A 1-D Kalman filter tracking a rover from noisy position readings (made up). Make the readings noisier and see the estimate lean more on its own prediction.</figcaption></figure>
+
 ## 13.5 Particle filters and robot localization
 
 *Level: intermediate.*

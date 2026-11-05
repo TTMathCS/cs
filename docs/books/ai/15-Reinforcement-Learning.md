@@ -211,6 +211,8 @@ logarithmic regret (Agrawal and Goyal, 2012) and is often the best in practice (
 a feature vector before each pull (who the user is) and learn a policy from features to arms; they are the main tool
 for recommendation and online advertising.
 
+<figure class="play" data-play="bandit"><span class="ai-tag">AI-created</span><figcaption><b>Watch it.</b> ε-greedy on four arms with made-up hidden chances. Bars show how often each arm was pulled; change ε to explore more or less.</figcaption></figure>
+
 ## 15.2 Monte Carlo and temporal-difference learning (Sutton 1988)
 
 Bandits have no states. Back in an MDP, start with the easier half of RL, **prediction**: given a fixed policy $\pi$,

@@ -252,6 +252,8 @@ The sampled sentences look locally right and globally loose: "a scientist" is a 
 every pair and triple of words in it is fine. C. E. Shannon showed the same effect in 1948, generating English-like
 text from letter and word n-gram statistics, and the observation drove decades of work on longer contexts.
 
+<figure class="play" data-play="bigram"><span class="ai-tag">AI-created</span><figcaption><b>Try it.</b> A bigram model trained on a few sentences written for this page: it picks each next word in proportion to what followed the last one.</figcaption></figure>
+
 ## 16.3 Classic tasks: classification, tagging (HMM POS tagging), parsing (CKY) from scratch
 
 *Level: intermediate.*

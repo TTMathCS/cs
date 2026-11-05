@@ -771,6 +771,8 @@ per sweep until news of the +1 reaches it, then rises: (3, 3), one step from the
 steps away, after 6. Far squares converge last.</figcaption>
 </figure>
 
+<figure class="play" data-play="gridvalue"><span class="ai-tag">AI-created</span><figcaption><b>Try it.</b> Value iteration on a small made-up grid world: add sweeps and watch values spread from the goal and the pit; raise the cost of moving and see the policy take risks to finish sooner.</figcaption></figure>
+
 ## 14.6 POMDPs and belief-state MDPs
 
 *Level: advanced.*
