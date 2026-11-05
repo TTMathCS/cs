@@ -236,6 +236,8 @@ it. Morris and Pratt wrote a technical report in 1970, and the joint paper, "Fas
 published in the *SIAM Journal on Computing* in 1977. The reference page [Knuth-Morris-Pratt](../../strings/kmp.md)
 has the same algorithm in Python, Java and C++ and an animation.
 
+<figure class="play" data-play="naivekmp"><span class="ai-tag">AI-created</span><figcaption>Try it: count the character comparisons of naive matching and of KMP on the same text and pattern.</figcaption></figure>
+
 ## 18.3 The Z-algorithm, Rabin-Karp and rolling hashes
 
 *Level: intermediate.*

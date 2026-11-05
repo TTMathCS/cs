@@ -287,6 +287,8 @@ The rank counts on 200,000 random unions stay well under the $n/2^r$ bound of Le
 far below $\log_2 n \approx 17.6$. The [union-find reference page](../../data-structures/union-find.md) has the same
 structure in Java and C++ with an animation.
 
+<figure class="play" data-play="unionfind"><span class="ai-tag">AI-created</span><figcaption>Try it: union-find with path compression. Join sets with each step and see how a find flattens the path behind it.</figcaption></figure>
+
 ## 10.3 Prefix sums and difference arrays
 
 Now the second kind of question. A list $a_0, a_1, \dots, a_{n-1}$ of numbers is given, and many queries ask for

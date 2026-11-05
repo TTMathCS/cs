@@ -484,6 +484,8 @@ In real systems these knobs are set by trial: a low temperature for tasks with o
 moderate temperature with nucleus sampling for open writing. Holtzman and colleagues' argument for nucleus over top-k
 is the one in the definition: a fixed $k$ is too many when the model is sure and too few when it is not.
 
+<figure class="play" data-play="topp"><span class="ai-tag">AI-created</span><figcaption>Try it: nucleus (top-p) sampling. Move p and see which words stay in the pool. The word probabilities are made up.</figcaption></figure>
+
 ## 17.4 Instruction tuning and learning from human feedback; reward models; DPO
 
 *Level: advanced.*

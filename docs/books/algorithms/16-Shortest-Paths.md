@@ -511,6 +511,8 @@ Bellman-Ford: each router relaxes using its neighbours' distance tables.
 - **Arbitrage.** If exchange rates multiply round a cycle to more than 1, you can make money from nothing. Taking
   $w = -\log(\text{rate})$ turns "product $> 1$" into "sum $< 0$": arbitrage is a negative cycle (exercise 5).
 
+<figure class="play" data-play="negedge"><span class="ai-tag">AI-created</span><figcaption>Try it: one edge of −4. Dijkstra settles a node too early and keeps the wrong distance; Bellman-Ford relaxes every edge again and finds the true one. Small made-up graph.</figcaption></figure>
+
 ## 16.4 Shortest paths in a DAG
 
 If the graph has no directed cycle, there is a much faster way, and it even allows negative weights. Relax the

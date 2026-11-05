@@ -574,6 +574,8 @@ Notes: (1) if $b$ is finite and the state space either has a solution or is fini
 least $\varepsilon > 0$; (3) complete in finite spaces as graph search, or with cycle checking; (4) if both
 directions are breadth-first or uniform-cost; (5) if all action costs are equal.
 
+<figure class="play" data-play="bfsdfs"><span class="ai-tag">AI-created</span><figcaption>Try it: the same maze searched breadth-first and depth-first. Watch the order each one visits the squares.</figcaption></figure>
+
 ## 3.4 Bidirectional search
 
 *Level: intermediate.*

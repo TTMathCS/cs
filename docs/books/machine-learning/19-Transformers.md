@@ -172,6 +172,8 @@ initialisation and layer norm keep them close to that scale. The paper offers th
 observation it cites (Britz et al., 2017): without scaling, dot-product attention did worse than additive attention
 for large $d_k$.
 
+<figure class="play" data-play="attnmap"><span class="ai-tag">AI-created</span><figcaption>Try it: tap a word to see how much it attends to each other word. The weights are made up to show the idea, not taken from a real model.</figcaption></figure>
+
 ## 19.3 Multi-head attention; positional encodings
 
 **The question:** one softmax gives one weighted average per position. But a word may need several things at once:

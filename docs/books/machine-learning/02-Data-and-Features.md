@@ -590,6 +590,8 @@ Decision trees and their ensembles (Chapter 11) are not: a tree asks questions l
 question can be asked in any unit. The exact least-squares solution of Chapter 4 is also unaffected in its
 predictions, though not in its numerical accuracy (section 4.7).
 
+<figure class="play" data-play="scalefeat"><span class="ai-tag">AI-created</span><figcaption>Try it: two features on very different scales. Standardise them and see the nearest neighbour change. Made-up numbers.</figcaption></figure>
+
 ## 2.5 Feature engineering and interactions
 
 Can we help a learner by giving it better columns? Often a lot. **Feature engineering** means building new features

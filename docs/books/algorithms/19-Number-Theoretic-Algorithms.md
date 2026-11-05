@@ -622,6 +622,8 @@ factors; Lenstra and Pomerance later reduced it to about $(\log n)^6$. It settle
 faster and is what software uses. When a proof of primality is needed, the elliptic-curve primality proving method
 (ECPP) is the practical choice.
 
+<figure class="play" data-play="fermat"><span class="ai-tag">AI-created</span><figcaption>Try it: the Fermat test on 91, 97, 561 and 341. Pick a number and watch each base a give a<sup>n−1</sup> mod n; 561 is a Carmichael number that fools every base coprime to it.</figcaption></figure>
+
 ## 19.5 Factoring: trial division and Pollard's rho
 
 *Level: intermediate to advanced.*

@@ -519,6 +519,8 @@ probability the total number of comparisons is at most $nL = O(n \log n)$. The c
 quadratic behaviour is not merely small, it vanishes faster than any power you like as $n$ grows, if you take the
 constant 8 larger.
 
+<figure class="play" data-play="coinruns"><span class="ai-tag">AI-created</span><figcaption>Try it: flip n fair coins many times and see how the share of heads crowds around one half as n grows, as the Chernoff bound says.</figcaption></figure>
+
 ## 21.4 Karger's minimum cut and amplification
 
 *Level: advanced.* Here is a problem where randomness gives a strikingly simple algorithm. A **cut** of a connected
