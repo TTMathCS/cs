@@ -654,6 +654,8 @@ fewer steps (DDIM, Song, Meng and Ermon, 2021); and running diffusion in an auto
 ([Chapter 19](19-Transformers.md)). The main cost is sampling: tens to hundreds of network evaluations per sample,
 against one for a GAN.
 
+<figure class="play" data-play="noising"><span class="ai-tag">AI-created</span><figcaption><b>Try it.</b> The forward half of a diffusion model: slide to add noise step by step until the picture is gone. Generating runs it backwards.</figcaption></figure>
+
 ## 20.6 Autoregressive models
 
 **The question:** is there a generative model with an exact likelihood, simple training and no latent variables at

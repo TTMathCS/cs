@@ -337,6 +337,8 @@ factor), so the MAP estimate of $p$ and the MAP estimate of $\log\frac{p}{1-p}$ 
 medians and predictions do not have this defect. MAP is best thought of as regularized maximum likelihood, useful
 but not fully Bayesian.
 
+<figure class="play" data-play="betacoin"><span class="ai-tag">AI-created</span><figcaption><b>Try it.</b> Flip a hidden coin (it lands heads 70% of the time) and watch the Beta posterior narrow around the truth, starting from a flat prior.</figcaption></figure>
+
 ## 12.4 Bayesian linear regression: posterior and predictive, derived
 
 Ridge regression gave one weight vector. The Bayesian version gives a distribution over weight vectors, and with it

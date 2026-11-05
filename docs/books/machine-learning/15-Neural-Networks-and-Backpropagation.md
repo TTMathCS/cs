@@ -147,6 +147,8 @@ the XOR table (it never converges, as Novikoff's theorem of Chapter 6 only promi
 while the hand-made network is correct on all four inputs. It then trains a network of the same 2-2-1 shape from
 random weights, which we come back to in 15.4.
 
+<figure class="play" data-play="xorlines"><span class="ai-tag">AI-created</span><figcaption><b>Try it.</b> Turn and shift one line: XOR's corners can never all be split by it. Then let two hidden units draw two lines.</figcaption></figure>
+
 ## 15.2 Activation functions and why non-linearity matters
 
 Our hand-made XOR network used the step function. Step functions have derivative zero everywhere (except at the jump,

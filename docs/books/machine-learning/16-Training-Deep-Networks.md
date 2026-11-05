@@ -169,6 +169,8 @@ starts at length about 1 at the top (right) and is multiplied by one factor per 
 The lesson is that the **scale** of the initial weights, a single number per layer, decides whether a deep network
 can learn at all. The next section derives the right number.
 
+<figure class="play" data-play="vanish"><span class="ai-tag">AI-created</span><figcaption><b>Try it.</b> Add layers and see how much gradient reaches the first one: with sigmoids at most 0.25 per layer, with active ReLUs 1.</figcaption></figure>
+
 ## 16.2 Initialization: Xavier and He, derived from variance
 
 ### Why not zero?

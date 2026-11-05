@@ -375,6 +375,8 @@ of map with almost all entries forced to zero and the rest forced to be equal. S
 very strong, very well-chosen constraint, which is why everything from [Chapter 15](15-Neural-Networks-and-Backpropagation.md)
 still applies.
 
+<figure class="play" data-play="convfilter"><span class="ai-tag">AI-created</span><figcaption><b>Try it.</b> Slide a 3 × 3 filter over a small picture of a crater: blur, edge detectors and sharpen, with the filter's numbers shown between the pictures.</figcaption></figure>
+
 ## 17.3 Pooling; receptive fields; translation equivariance
 
 **The question:** a filter sees a $3 \times 3$ window. How does the network come to recognise a whole face, which

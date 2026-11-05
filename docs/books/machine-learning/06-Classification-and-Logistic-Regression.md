@@ -239,6 +239,8 @@ that is XOR (6.6). Interest in neural networks fell sharply in the 1970s. Learni
 which escape these limits, became widely known with backpropagation (Rumelhart, Hinton and Williams 1986), the subject
 of [Chapter 15](15-Neural-Networks-and-Backpropagation.md).
 
+<figure class="play" data-play="perceptron"><span class="ai-tag">AI-created</span><figcaption><b>Watch it.</b> The perceptron rule on 30 made-up points: every point on the wrong side tilts the line toward it, until none is left.</figcaption></figure>
+
 ## 6.3 Logistic regression
 
 We want a model that outputs a probability. Keep the linear score $z=w^\top x$, which can be any real number, and

@@ -200,6 +200,8 @@ shapes (3,1) + (1,4) -> (3, 4)
  [20 21 22 23]]
 ```
 
+<figure class="play" data-play="dotprod"><span class="ai-tag">AI-created</span><figcaption><b>Try it.</b> Tap to move the tip of the blue vector: the dot product is positive when the arrows point the same way, zero at a right angle, negative when they point apart.</figcaption></figure>
+
 ## 3.2 Matrices: tables and maps
 
 What is a matrix? Two answers, both essential. A **matrix** is a rectangular table of numbers with $n$ rows and $m$

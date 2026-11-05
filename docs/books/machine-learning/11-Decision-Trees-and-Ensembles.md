@@ -234,6 +234,8 @@ for survey data, Earl Hunt's Concept Learning System (1966) in psychology, J. Ro
 Charles Stone (*Classification and Regression Trees*, 1984), whose rules for binary splits and pruning this chapter
 follows.
 
+<figure class="play" data-play="gini"><span class="ai-tag">AI-created</span><figcaption><b>Try it.</b> Slide the cut and watch each side's Gini impurity and the weighted score; a tree takes the cut with the lowest. The points are made up.</figcaption></figure>
+
 ## 11.2 Growing a tree from scratch (CART), pruning
 
 How do we find the best tree? Finding the smallest tree consistent with the data is NP-complete (Laurent Hyafil and
