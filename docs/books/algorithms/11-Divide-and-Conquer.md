@@ -444,6 +444,8 @@ switches from schoolbook to Karatsuba multiplication once numbers exceed a cut-o
 bits; below that, the overhead of recursion outweighs the saving. The GMP library chooses between schoolbook,
 several Toom-Cook variants and FFT methods by size.
 
+<figure class="play" data-play="karatsuba"><span class="ai-tag">AI-created</span><figcaption><b>Try it.</b> Digit products needed by schoolbook multiplication and by Karatsuba as the numbers grow.</figcaption></figure>
+
 ## 11.5 Strassen's matrix multiplication
 
 Multiplying two $n \times n$ matrices by the definition, $C_{ij} = \sum_k A_{ik} B_{kj}$, takes $n$ multiplications for

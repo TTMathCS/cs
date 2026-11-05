@@ -153,6 +153,8 @@ well-known weakness of competitive analysis; refinements such as the **access gr
 Raghavan and Schieber, 1995) and resource augmentation (compare LRU with $k$ pages against OPT with fewer) explain
 why LRU is so good in practice.
 
+<figure class="play" data-play="skirental"><span class="ai-tag">AI-created</span><figcaption><b>Try it.</b> Ski rental: compare always renting, buying at once, the break-even rule and someone who knows the future.</figcaption></figure>
+
 ## 24.2 Streaming: Misra-Gries, count-min sketch, HyperLogLog
 
 A network router sees billions of packets a day and wants to know which addresses send the most. A website wants

@@ -658,6 +658,8 @@ page](../../number-theory/gcd.md) has the code in three languages and an animati
 This contrast, between "it obviously stops" and "it stops *quickly*", is the step from correctness to efficiency that
 the next chapter takes.
 
+<figure class="play" data-play="euclidsq"><span class="ai-tag">AI-created</span><figcaption><b>Watch it.</b> Euclid's algorithm as cutting the biggest squares out of a rectangle, starting with the example above, gcd(1071, 462). Type other numbers to try them.</figcaption></figure>
+
 ## 1.8 Turing machines and the limits of computation
 
 *Level: advanced.* Everything so far assumed that a problem *has* an algorithm and asked how good it is. In 1936 Alan

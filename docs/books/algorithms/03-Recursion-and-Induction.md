@@ -830,6 +830,8 @@ So the recursive algorithm is optimal: $L(n)=M(n)=2^n-1$. This is a rare situati
 exponential time, not because we lack a clever idea but because the answer itself is exponentially long: any algorithm
 must at least output $2^n-1$ moves.
 
+<figure class="play" data-play="hanoi"><span class="ai-tag">AI-created</span><figcaption><b>Watch it.</b> The Towers of Hanoi solved by the recursion above: 2<sup>n</sup> − 1 moves. Choose how many discs.</figcaption></figure>
+
 ## Check yourself
 
 ??? question "1. Write the code: a recursive function that counts the digits of a whole number n ≥ 0, and prove it correct."

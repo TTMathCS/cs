@@ -103,6 +103,8 @@ Difficulty of Functions") and by Jack Edmonds ("Paths, Trees, and Flowers", whic
 maximum matching in general graphs and called such algorithms "good"). It is now called the Cobham-Edmonds thesis.
 It is a convention, not a theorem, and both its authors said so.
 
+<figure class="play" data-play="bruteforce"><span class="ai-tag">AI-created</span><figcaption><b>Try it.</b> How many round trips there are through n cities, and how long checking them all would take at a billion a second (a generous guess).</figcaption></figure>
+
 ## 22.2 P and NP via certificates
 
 What do the hard problems have in common? Not that they are hard to *solve*, but that they are easy to *check*.

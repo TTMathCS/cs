@@ -267,6 +267,8 @@ we control ourselves (8.6).
 The [binary search tree reference page](../../data-structures/bst.md) has the same operations in Python, Java and C++
 with an animation.
 
+<figure class="play" data-play="bstorder"><span class="ai-tag">AI-created</span><figcaption><b>Watch it.</b> The same 15 keys inserted into a plain binary search tree in random and in sorted order. Sorted input turns it into a list.</figcaption></figure>
+
 ## 8.3 AVL trees
 
 *Level: intermediate.*

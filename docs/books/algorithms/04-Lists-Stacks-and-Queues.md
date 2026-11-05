@@ -243,6 +243,8 @@ and alternating appends and removals cost $\Theta(n)$ each. The standard fix is 
 full. Then after any resize the array is half full, and at least $n/4$ operations must happen before the next resize, which
 pays for it. Chapter 21 proves this with the potential method.
 
+<figure class="play" data-play="dynarray"><span class="ai-tag">AI-created</span><figcaption><b>Watch it.</b> 64 appends to an array that starts with room for one. Doubling keeps the average cost per append under 3; growing by a fixed amount does not.</figcaption></figure>
+
 ## 4.3 Linked lists
 
 What if we want to insert in the middle often, and never want to copy everything to grow? A different layout gives up fast

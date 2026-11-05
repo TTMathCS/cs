@@ -109,6 +109,8 @@ The two standard ways of proving the greedy choice property are:
 - **Exchange argument:** take any optimal solution that differs from greedy's, and swap pieces to make it more like
   greedy's without making it worse.
 
+<figure class="play" data-play="greedycoins"><span class="ai-tag">AI-created</span><figcaption><b>Try it.</b> The cashier's rule against the fewest coins, for both coin systems above. Try 6 with coins 4, 3, 1.</figcaption></figure>
+
 ## 12.2 Activity selection
 
 One lecture hall, many requests. Each request $i$ asks for the hall from start time $s_i$ to finish time $f_i$. Two

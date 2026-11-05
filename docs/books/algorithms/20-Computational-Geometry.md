@@ -438,6 +438,8 @@ is the standard implementation in any dimension.
 
 (The monotone chain counts exclude the comparisons of the initial sort, which are not orientation tests.)
 
+<figure class="play" data-play="hull"><span class="ai-tag">AI-created</span><figcaption><b>Watch it.</b> Gift wrapping on made-up points: from the leftmost point, keep turning to the point with every other point on one side. Tap to add points.</figcaption></figure>
+
 ## 20.4 Sweep-line algorithms
 
 **The problem.** Given $n$ segments, report every pair that crosses. Checking all pairs with Theorem 20.2 costs

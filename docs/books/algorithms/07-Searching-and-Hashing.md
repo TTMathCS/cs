@@ -768,6 +768,8 @@ Kaminsky and Mitzenmacher, 2014) store short fingerprints in a cuckoo hash table
 at low error rates. Sketches that *count* rather than test membership, such as count-min and HyperLogLog, are in
 [Chapter 24](24-Algorithms-for-Big-Data-and-Many-Processors.md).
 
+<figure class="play" data-play="bloom"><span class="ai-tag">AI-created</span><figcaption><b>Try it.</b> Change the bits per item and the number of hash functions, and compare the false-positive formula with 2,000 test queries run here.</figcaption></figure>
+
 ## 7.8 How Python's dict really works
 
 Python's `dict` is perhaps the most heavily used data structure in the language: every module's global variables,
