@@ -309,6 +309,8 @@ The trouble is that almost every class in this book is infinite: a line in the p
 so there are uncountably many. Yet in Part 2 we saw that what matters is not how many hypotheses exist but how many
 *behave differently* on the data. That is the idea of the next section.
 
+<figure class="play" data-play="pacbound"><span class="ai-tag">AI-created</span><figcaption>Try it: the bound m ≥ (ln|H| + ln(1/δ))/ε. The page's example, |H| = 101, ε = δ = 0.05, needs 153 examples.</figcaption></figure>
+
 ## 21.3 The VC dimension
 
 *Level: advanced.*

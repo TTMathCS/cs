@@ -137,6 +137,8 @@ the input from the right.)
 **History.** CLRS credits counting sort, and the idea of using it inside radix sort, to Harold Seward's 1954 MIT
 master's thesis. See the reference page [Counting sort](../../sorting/counting-sort.md).
 
+<figure class="play" data-play="countsort"><span class="ai-tag">AI-created</span><figcaption>Try it: counting sort on twelve made-up digits. Count each key, then write the keys out in order, with no comparisons.</figcaption></figure>
+
 ## 6.2 Radix sort, LSD and MSD
 
 Keys up to a million do not fit counting sort comfortably, but each one is only six decimal digits. **Radix sort** sorts

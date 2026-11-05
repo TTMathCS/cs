@@ -393,6 +393,8 @@ graph, which 17.5 exploits. With irrational capacities the method may fail to st
 converge to something less than the maximum; Ford and Fulkerson gave such an example themselves, and Zwick (1995)
 found the smallest ones.
 
+<figure class="play" data-play="maxflow"><span class="ai-tag">AI-created</span><figcaption>Try it: Edmonds-Karp on the network of Figure 17.2. Each step pushes the bottleneck of the shortest path with room; it stops at 15, the minimum cut.</figcaption></figure>
+
 ## 17.4 The max-flow min-cut theorem
 
 How do we know that 15 is the maximum in Figure 17.2? We need a certificate, a short reason no flow can do better.

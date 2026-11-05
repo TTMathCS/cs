@@ -173,6 +173,8 @@ and could not be used in a bad sense, at a time when, as he told it, the Secreta
 the property that, whatever the first decision, the remaining decisions form an optimal policy for the state that
 results. That is what this book calls **optimal substructure**.
 
+<figure class="play" data-play="fibcalls"><span class="ai-tag">AI-created</span><figcaption>Try it: plain recursion makes 2F<sub>n+1</sub> − 1 calls for F<sub>n</sub>, the claim above; a memo makes n + 1. Move n.</figcaption></figure>
+
 ## 13.2 The recipe
 
 Dynamic programming is not one algorithm but a way of designing algorithms. Every dynamic program (DP) has four parts:

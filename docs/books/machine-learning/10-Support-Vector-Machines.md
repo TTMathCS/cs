@@ -129,6 +129,8 @@ Vapnik showed that hyperplanes with margin at least $\gamma$ on data inside a ba
 capacity (its VC dimension) is at most about $R^2/\gamma^2 + 1$, *whatever the dimension* $d$. A wide margin keeps the
 class simple even in a huge feature space, which is exactly what the kernel trick needs.
 
+<figure class="play" data-play="svmmargin"><span class="ai-tag">AI-created</span><figcaption>Try it: turn the line between two groups of made-up points and watch the empty band around it; Widest finds the SVM's choice.</figcaption></figure>
+
 ## 10.2 Hard-margin SVM as a quadratic program
 
 Combining the canonical scaling with "minimise $\lVert w \rVert$" (we minimise $\tfrac12 \lVert w \rVert^2$ instead,

@@ -248,6 +248,8 @@ satisfiability: KB $\models \beta$ is co-NP-complete, so a polynomial algorithm 
 ([the Algorithms book, 22.6](../algorithms/22-NP-Completeness.md#226-karps-21-problems-co-np-and-pspace)). The rest of
 the chapter is about doing much better than truth tables in practice.
 
+<figure class="play" data-play="cnfflip"><span class="ai-tag">AI-created</span><figcaption>Try it: flip A, B and C to satisfy every clause of a small made-up formula.</figcaption></figure>
+
 ## 8.3 Inference: resolution, soundness and completeness; CNF conversion
 
 *Level: intermediate.*

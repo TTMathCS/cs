@@ -588,6 +588,8 @@ comparison with one fixed pivot held in a register and a pointer increment; it r
 level. For numbers in arrays, the constant factors favour quicksort. For records with expensive comparisons (Python
 objects), they favour merge-based sorts, which is one reason Python uses Timsort (5.7). See [Quicksort](../../sorting/quicksort.md).
 
+<figure class="play" data-play="sortcount"><span class="ai-tag">AI-created</span><figcaption>Try it: count the comparisons insertion sort and merge sort make on shuffled, sorted and reversed lists.</figcaption></figure>
+
 ## 5.5 Heapsort
 
 Merge sort is $O(n\log n)$ always but not in place. Quicksort is in place but only $O(n\log n)$ in expectation. Can we

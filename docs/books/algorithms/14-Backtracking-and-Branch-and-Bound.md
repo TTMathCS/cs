@@ -502,6 +502,8 @@ programming** and of modern SAT solvers ([Chapter 23](23-Approximation-and-Param
 propagation is called **unit propagation**. Sudoku is also an **exact cover** problem, for which Donald Knuth's
 "Dancing Links" (2000) gives an elegant backtracking data structure.
 
+<figure class="play" data-play="queens"><span class="ai-tag">AI-created</span><figcaption>Try it: backtracking places six queens row by row and takes one back at every dead end.</figcaption></figure>
+
 ## 14.4 Pruning: bounding functions; branch and bound
 
 Backtracking prunes nodes that cannot lead to *any* valid solution. In an **optimisation** problem almost every node

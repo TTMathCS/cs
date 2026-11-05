@@ -453,6 +453,8 @@ sorting them: about $nm+n\log n$ steps (only selecting the $k$ smallest, as in
 [Chapter 6 of the Algorithms book](../algorithms/06-Sorting-in-Linear-Time-and-Selection.md), brings it down to
 about $nm$). For millions of points that is slow, which is why Chapter 9 looks at faster search.
 
+<figure class="play" data-play="fruitnn"><span class="ai-tag">AI-created</span><figcaption>Try it: tap to place a new fruit among the ten in the table above; the nearest one gives it its label.</figcaption></figure>
+
 ## 1.4 Training, validation and test data
 
 How do we know whether a learner is any good? The obvious answer, "see how often it is right on the examples we

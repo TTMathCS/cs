@@ -309,6 +309,8 @@ goes up by 1; for $n$ it doubles; for $n\lg n$ it slightly more than doubles; fo
 time an $n$ algorithm handles inputs 1000 times bigger, an $n^2$ algorithm about 32 times bigger ($\sqrt{1000}$), and a
 $2^n$ algorithm inputs bigger by only about 10 items ($2^{10}\approx1000$).
 
+<figure class="play" data-play="growth"><span class="ai-tag">AI-created</span><figcaption>Try it: move n and see how long lg n, n, n lg n, n² and 2ⁿ steps take at 10⁹ steps a second, the speed this page uses.</figcaption></figure>
+
 ## 2.5 Rules for working with growth rates
 
 *Level: intermediate.* Proving every Big-O fact from the definition gets tedious. A few rules, each proved once from the

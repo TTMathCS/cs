@@ -330,6 +330,8 @@ and C++ with an animation.
 bottom-up in linear time. The word "heap" for this structure comes from Williams's paper; it has nothing to do with
 the "heap" of memory that a program allocates from.
 
+<figure class="play" data-play="heapsift"><span class="ai-tag">AI-created</span><figcaption>Try it: ten made-up keys go into a min-heap one by one. Each lands in the next free slot and sifts up; the tree and the array are the same heap.</figcaption></figure>
+
 ## 9.3 Heapsort revisited; d-ary heaps
 
 ### Heapsort

@@ -177,6 +177,8 @@ for combinatorial problems", written just after Cook's and Karp's NP-completenes
 believed out of reach, the natural question became how close one could get. The matching cover for vertex cover is usually
 credited to Fănică Gavril and Mihalis Yannakakis.
 
+<figure class="play" data-play="vcover"><span class="ai-tag">AI-created</span><figcaption>Try it: the 2-approximation on a small made-up graph. Each uncovered edge puts both its ends in the cover.</figcaption></figure>
+
 ## 23.2 Metric TSP: MST doubling and Christofides
 
 The **travelling salesman problem** (TSP) asks for the shortest closed tour that visits each of $n$ cities exactly
