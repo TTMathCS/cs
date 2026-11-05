@@ -317,6 +317,8 @@ lines check, over every reachable state, that $h_1 \le h_2 \le h^{*}$ and that b
 average $h_2$ is 14.00 while the true distance is 21.97: even the better heuristic sees only about two thirds of the
 true cost.
 
+<figure class="play" data-play="astar"><span class="ai-tag">AI-created</span><figcaption><b>Watch it.</b> A*, uniform-cost search and weighted A* on the same grid: blue squares were looked at, gold is the path found. Tap squares to move the walls. The grid is made up.</figcaption></figure>
+
 ## 4.3 Designing heuristics
 
 *Level: intermediate.*

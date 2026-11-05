@@ -320,6 +320,8 @@ conditionally independent effects is the **naive Bayes** model; it is called nai
 independence even when it is false, and it works surprisingly well as a classifier anyway (the Machine learning
 book's [Chapter 12](../machine-learning/12-Probabilistic-Models.md) studies it as a learning method).
 
+<figure class="play" data-play="medtest"><span class="ai-tag">AI-created</span><figcaption><b>Try it.</b> The medical test above as 10,000 people: change how common the condition is and how good the test is, and see how often a positive is real.</figcaption></figure>
+
 ## 12.3 Bayesian networks (Pearl 1988): structure, conditional independence, d-separation
 
 ### The idea: write down only the direct influences

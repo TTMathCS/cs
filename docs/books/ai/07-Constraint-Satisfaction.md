@@ -519,6 +519,8 @@ A real advantage of local search is **online repair**: when a schedule is disrup
 observation runs long), min-conflicts starts from the old schedule and changes only what must change, instead of
 building a new schedule from scratch that might move everything.
 
+<figure class="play" data-play="minconf"><span class="ai-tag">AI-created</span><figcaption><b>Watch it.</b> Min-conflicts on 8 queens: an attacked queen moves to the row in its column where it is attacked least. New start begins from another random board.</figcaption></figure>
+
 ## 7.5 Structure: tree-structured CSPs solved in linear time, cutset conditioning
 
 *Level: advanced.*

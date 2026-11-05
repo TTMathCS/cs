@@ -420,6 +420,8 @@ try **killer moves** that caused cutoffs in sibling positions; and keep a **tran
 searched, usually indexed by a **Zobrist hash** (Albert Zobrist, 1970), a random 64-bit number per (piece, square)
 XOR-ed together so that it updates in constant time per move.
 
+<figure class="play" data-play="alphabeta"><span class="ai-tag">AI-created</span><figcaption><b>Watch it.</b> Alpha-beta on a small game tree with made-up leaf values: crossed-out leaves are never looked at, and the answer does not change.</figcaption></figure>
+
 ## 6.4 Evaluation functions, cutoffs, quiescence; Deep Blue (1997)
 
 *Level: intermediate.*

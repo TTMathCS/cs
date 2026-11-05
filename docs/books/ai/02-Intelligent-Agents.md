@@ -768,6 +768,8 @@ what counts as interesting. What they show is the main point of this chapter. On
 measure and are honest about the environment's properties (here, a delay of many minutes, a partially observed
 and changing terrain), the kind of agent you need follows.
 
+<figure class="play" data-play="lighttime"><span class="ai-tag">AI-created</span><figcaption><b>Try it.</b> This page's light-time model: turn the angle between Earth and Mars and see the distance and the one-way radio time. Orbits are drawn as circles, as in the model.</figcaption></figure>
+
 ## Check yourself
 
 ??? question "1. Write a PEAS description for a spam filter. Then classify its environment by the seven properties of 2.3."

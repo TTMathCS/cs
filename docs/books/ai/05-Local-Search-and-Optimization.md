@@ -600,6 +600,8 @@ and a cold phase where the tour is frozen and only tiny improvements remain.
 accepted; set the final temperature so that almost none are; choose the number of steps by the time you have; and
 always keep the best state seen, since the current state at the end may be slightly worse than an earlier one.
 
+<figure class="play" data-play="anneal"><span class="ai-tag">AI-created</span><figcaption><b>Watch it.</b> Simulated annealing against plain hill climbing on a tour of 25 made-up sites: heat lets it accept worse tours early on and escape traps.</figcaption></figure>
+
 ## 5.4 Local beam search; genetic algorithms
 
 *Level: intermediate.*
