@@ -94,7 +94,12 @@ validation:
   anchors: warn
 
 nav:
-  - Home: index.md
+  # Five tabs at most, the same on every course site (cntourit, 8 Nov 2026: "same format and similar categories"):
+  # Home, Start, Topics, Books (and Labs where a site has them). No page moved; every address is unchanged.
+  - Home:
+      - index.md
+      - How to read this site: start.md
+      - "What's new": new.md
   - Start:
       - first-steps/index.md
       - Find your level: level-check.md
@@ -106,9 +111,79 @@ nav:
       - first-steps/06-How-a-Computer-Learns.md
   - Topics:
       - topics/index.md
-      - Sort and search data: topics/Sorting-and-searching.md
-      - Find the shortest route: topics/Shortest-routes.md
-      - How a large language model works: topics/Language-models.md
+      - Step-by-step guides:
+          - Sort and search data: topics/Sorting-and-searching.md
+          - Find the shortest route: topics/Shortest-routes.md
+          - How a large language model works: topics/Language-models.md
+      - Algorithm reference:
+          - algorithms/index.md
+          - Foundations:
+              - foundations/index.md
+              - Big-O and running time: foundations/big-o.md
+              - Recursion: foundations/recursion.md
+          - Sorting:
+              - sorting/index.md
+              - Bubble sort: sorting/bubble-sort.md
+              - Selection sort: sorting/selection-sort.md
+              - Insertion sort: sorting/insertion-sort.md
+              - Merge sort: sorting/merge-sort.md
+              - Quicksort: sorting/quicksort.md
+              - Heapsort: sorting/heapsort.md
+              - Counting sort: sorting/counting-sort.md
+              - Radix sort: sorting/radix-sort.md
+          - Searching:
+              - searching/index.md
+              - Binary search: searching/binary-search.md
+              - Binary search on the answer: searching/binary-search-answer.md
+              - Two pointers: searching/two-pointers.md
+              - Sliding window: searching/sliding-window.md
+          - Data structures:
+              - data-structures/index.md
+              - Stack and queue: data-structures/stack-queue.md
+              - Hash table: data-structures/hash-table.md
+              - Binary heap: data-structures/binary-heap.md
+              - Binary search tree: data-structures/bst.md
+              - Union-find: data-structures/union-find.md
+              - Fenwick tree: data-structures/fenwick-tree.md
+              - Segment tree: data-structures/segment-tree.md
+              - Trie: data-structures/trie.md
+          - Graphs:
+              - graphs/index.md
+              - Breadth-first search: graphs/bfs.md
+              - Depth-first search: graphs/dfs.md
+              - Topological sort: graphs/topological-sort.md
+              - Dijkstra's algorithm: graphs/dijkstra.md
+              - Bellman-Ford: graphs/bellman-ford.md
+              - Floyd-Warshall: graphs/floyd-warshall.md
+              - Kruskal's algorithm: graphs/kruskal.md
+              - Prim's algorithm: graphs/prim.md
+              - Strongly connected components: graphs/scc.md
+          - Dynamic programming:
+              - dp/index.md
+              - Fibonacci and the DP idea: dp/fibonacci.md
+              - Coin change: dp/coin-change.md
+              - 0/1 knapsack: dp/knapsack.md
+              - Longest common subsequence: dp/lcs.md
+              - Longest increasing subsequence: dp/lis.md
+              - Edit distance: dp/edit-distance.md
+          - Greedy:
+              - greedy/index.md
+              - Activity selection: greedy/activity-selection.md
+              - Huffman coding: greedy/huffman.md
+          - Strings:
+              - strings/index.md
+              - KMP: strings/kmp.md
+              - Rabin-Karp: strings/rabin-karp.md
+              - Z-algorithm: strings/z-algorithm.md
+          - Number theory:
+              - number-theory/index.md
+              - Euclid's GCD: number-theory/gcd.md
+              - Sieve of Eratosthenes: number-theory/sieve.md
+              - Fast exponentiation: number-theory/fast-power.md
+          - Backtracking:
+              - backtracking/index.md
+              - Subsets and permutations: backtracking/subsets-permutations.md
+              - N-Queens: backtracking/n-queens.md
   # books: start
   - Books:
       - books/index.md
@@ -191,74 +266,3 @@ nav:
           - books/ai/21-Where-AI-Goes.md
           - books/ai/Glossary.md
   # books: end
-  - Algorithms:
-      - algorithms/index.md
-      - Foundations:
-          - foundations/index.md
-          - Big-O and running time: foundations/big-o.md
-          - Recursion: foundations/recursion.md
-      - Sorting:
-          - sorting/index.md
-          - Bubble sort: sorting/bubble-sort.md
-          - Selection sort: sorting/selection-sort.md
-          - Insertion sort: sorting/insertion-sort.md
-          - Merge sort: sorting/merge-sort.md
-          - Quicksort: sorting/quicksort.md
-          - Heapsort: sorting/heapsort.md
-          - Counting sort: sorting/counting-sort.md
-          - Radix sort: sorting/radix-sort.md
-      - Searching:
-          - searching/index.md
-          - Binary search: searching/binary-search.md
-          - Binary search on the answer: searching/binary-search-answer.md
-          - Two pointers: searching/two-pointers.md
-          - Sliding window: searching/sliding-window.md
-      - Data structures:
-          - data-structures/index.md
-          - Stack and queue: data-structures/stack-queue.md
-          - Hash table: data-structures/hash-table.md
-          - Binary heap: data-structures/binary-heap.md
-          - Binary search tree: data-structures/bst.md
-          - Union-find: data-structures/union-find.md
-          - Fenwick tree: data-structures/fenwick-tree.md
-          - Segment tree: data-structures/segment-tree.md
-          - Trie: data-structures/trie.md
-      - Graphs:
-          - graphs/index.md
-          - Breadth-first search: graphs/bfs.md
-          - Depth-first search: graphs/dfs.md
-          - Topological sort: graphs/topological-sort.md
-          - Dijkstra's algorithm: graphs/dijkstra.md
-          - Bellman-Ford: graphs/bellman-ford.md
-          - Floyd-Warshall: graphs/floyd-warshall.md
-          - Kruskal's algorithm: graphs/kruskal.md
-          - Prim's algorithm: graphs/prim.md
-          - Strongly connected components: graphs/scc.md
-      - Dynamic programming:
-          - dp/index.md
-          - Fibonacci and the DP idea: dp/fibonacci.md
-          - Coin change: dp/coin-change.md
-          - 0/1 knapsack: dp/knapsack.md
-          - Longest common subsequence: dp/lcs.md
-          - Longest increasing subsequence: dp/lis.md
-          - Edit distance: dp/edit-distance.md
-      - Greedy:
-          - greedy/index.md
-          - Activity selection: greedy/activity-selection.md
-          - Huffman coding: greedy/huffman.md
-      - Strings:
-          - strings/index.md
-          - KMP: strings/kmp.md
-          - Rabin-Karp: strings/rabin-karp.md
-          - Z-algorithm: strings/z-algorithm.md
-      - Number theory:
-          - number-theory/index.md
-          - Euclid's GCD: number-theory/gcd.md
-          - Sieve of Eratosthenes: number-theory/sieve.md
-          - Fast exponentiation: number-theory/fast-power.md
-      - Backtracking:
-          - backtracking/index.md
-          - Subsets and permutations: backtracking/subsets-permutations.md
-          - N-Queens: backtracking/n-queens.md
-  - How to read this site: start.md
-  - What's new: new.md
