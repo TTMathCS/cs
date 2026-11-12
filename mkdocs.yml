@@ -116,6 +116,7 @@ nav:
           - Sort and search data: topics/Sorting-and-searching.md
           - Find the shortest route: topics/Shortest-routes.md
           - How a large language model works: topics/Language-models.md
+          - How 3D materials are made from formulas: topics/Materials-from-formulas.md
       - Algorithm reference:
           - algorithms/index.md
           - Foundations:

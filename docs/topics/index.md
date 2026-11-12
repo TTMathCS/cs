@@ -8,7 +8,7 @@ Topics holds two kinds of page, both reached from the menu on the left:
 
 | Group | What is in it |
 |---|---|
-| **Step-by-step guides** | one job each (sorting, shortest routes, language models), in four parts, below |
+| **Step-by-step guides** | one job each (sorting, shortest routes, language models, 3D materials), in four parts, below |
 | **[Algorithm reference](../algorithms/index.md)** | one page per algorithm, grouped by kind: sorting, searching, data structures, graphs, dynamic programming and more |
 
 The longer reading, the three [books](../books/index.md), is under **Books**.
@@ -31,3 +31,4 @@ Each guide stays short and links to the [Algorithm reference](../algorithms/inde
 | [Sort and search data](Sorting-and-searching.md) | put things in order, find them again fast |
 | [Find the shortest route](Shortest-routes.md) | maps, networks, games, anything with places and roads |
 | [How a large language model works](Language-models.md) | what is inside a chatbot, from tokens to training |
+| [How 3D materials are made from formulas](Materials-from-formulas.md) | stone, metal, glass and cloth drawn from noise, cells and the physics of light, with the Crown's real recipes |
