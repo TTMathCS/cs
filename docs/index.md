@@ -79,6 +79,17 @@ Professionals, university and beyond.
 
 <p class="level-check-link" markdown>Not sure which one is you? [Take the one-minute level check →](level-check.md)</p>
 
+## Step-by-step guides { #guides }
+
+One job each, on one page in four parts: a one-minute idea, working code, expert detail and the latest research.
+
+| Guide | The job |
+| --- | --- |
+| [Sort and search data](topics/Sorting-and-searching.md) | put things in order, find them again fast |
+| [Find the shortest route](topics/Shortest-routes.md) | maps, networks, games, anything with places and roads |
+| [How a large language model works](topics/Language-models.md) | what is inside a chatbot, from tokens to training |
+| [How 3D materials are made from formulas](topics/Materials-from-formulas.md) | stone, metal, glass and cloth drawn from noise, cells and the physics of light, with the Crown's real recipes |
+
 ## Books { #books }
 
 Want the whole road, not one algorithm at a time? The [Books](books/index.md) are full courses, from the first idea
