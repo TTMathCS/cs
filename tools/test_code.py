@@ -27,6 +27,8 @@ count = 0
 for py in sorted(ROOT.rglob("*.py")):
     if flt not in py.stem:
         continue
+    if "guides" in py.relative_to(ROOT).parts:      # code shown in a guide (one language, tested on its own)
+        continue
     count += 1
     java = py.with_name(camel(py.stem) + ".java")
     cpp = py.with_suffix(".cpp")

@@ -12,6 +12,7 @@ docs/index.md            the first page: the list of topics
 docs/<topic>/            one folder per topic (foundations, sorting, searching, data-structures, graphs, dp,
                          greedy, strings, number-theory, backtracking); index.md lists its pages
 code/<topic>/            every algorithm in Python (name.py), Java (CamelName.java) and C++ (name.cpp)
+code/guides/<guide>/     code shown in a Topics guide, in one language (test_code.py skips it)
 docs/anim/               the step-by-step animations' frames (made by tools/anim, never edited by hand)
 docs/javascripts/anim.js draws the animations; nothing moves until the reader presses Play or Step
 docs/stylesheets/        mars.css (the akadian.ca look), cs.css (facts tables, closed boxes, animations)
