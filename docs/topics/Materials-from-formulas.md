@@ -4,8 +4,8 @@
 
 [In one minute](#in-one-minute) · [Do it](#do-it) · [Expert](#expert) · [Now and next](#now-and-next)
 
-!!! note "Where these recipes come from, and what is still being written"
-    Every number on this page is copied from real code. The six materials of the Crown (polished basalt, plaster, bronze, glass, leather and the wool rugs) were written as formulas for Blender, in the files `tools/render/lib.py`, `crown_rooms.py`, `seating.py` and `furn.py` of the Arcadia City art repository. Blender lit them once and saved the result as pictures, which is how today's Crown page works. The Crown is now being **rewritten to compute everything live in the browser**, and its new material code is **not finished yet** (12 November 2026). So this page explains the formulas the old recipes use, which are the standard ones, and says plainly where the new page's choices are still unknown. The browser formulas shown are the ones in three.js r186, the 3D library the site's engine already ships.
+!!! note "Where these recipes come from"
+    Every number on this page is copied from real code. The six materials of the Crown (polished basalt, plaster, bronze, glass, leather and the wool rugs) were written as formulas for Blender, in the files `tools/render/lib.py`, `crown_rooms.py`, `seating.py` and `furn.py` of the Arcadia City art repository. Blender lit them once and saved the result as pictures, which is how today's Crown page works. The Crown has since been **rewritten to compute everything live in the browser** (the Arrival hall and the Door's room so far, at a test address that is not public yet, 12 November 2026). Its own shader code is described in [The new Crown page: what it actually computes](#the-new-crown-page-what-it-actually-computes), with every place where it differs from the textbook forms. The other sections explain the standard formulas, using the old recipes' numbers.
 
 ## In one minute
 
@@ -46,7 +46,7 @@ wrote basalt.png
 --8<-- "guides/materials/basalt.frag"
 ```
 
-**With three.js** (the library the site's engine uses), the light response is ready-made: `MeshPhysicalMaterial` has the parameters below, and the formulas behind them are in [The light: how a surface answers](#the-light-how-a-surface-answers). This is a direct translation of the old Blender numbers, not the new Crown page's code, which is still being written.
+**With three.js** (the library the site's engine uses), the light response is ready-made: `MeshPhysicalMaterial` has the parameters below, and the formulas behind them are in [The light: how a surface answers](#the-light-how-a-surface-answers). This is a direct translation of the old Blender numbers. The new Crown page does **not** use it: it writes its own light formulas in one shader (see [below](#the-new-crown-page-what-it-actually-computes)).
 
 ```js
 import * as THREE from "three";
@@ -75,6 +75,7 @@ const basalt  = new THREE.MeshPhysicalMaterial({ color: new THREE.Color(0.04, 0.
 | 8 | how much light leaves towards the eye | **BRDF**: Lambert diffuse, **GGX** microfacets, Smith shadowing, **Fresnel** | [Light](#the-light-how-a-surface-answers) |
 | 9 | coats, cloth, glass | **layering**, **sheen**, **transmission** | [Layers](#11-layers-clear-coat-sheen-and-glass) |
 | 10 | all the light in the room, not just the sun | the **rendering equation**, solved by **Monte Carlo** (Blender) or approximated live (browser) | [Whole room](#12-all-the-light-in-the-room) |
+| 11 | what the new Crown page really does | value noise, ring coordinates, anti-aliasing by `fwidth`, GGX, shadow maps, light probes | [The new Crown page](#the-new-crown-page-what-it-actually-computes) |
 
 Notation: vectors are bold or have arrows only when needed; $\mathbf n$ is the surface normal (unit length, pointing out), $\mathbf l$ the direction towards the light, $\mathbf v$ towards the eye, all unit vectors; $\mathbf a\cdot\mathbf b$ is the [dot product](https://math.akadian.ca/books/linear-algebra/01-Vectors.html), the cosine of the angle between two unit vectors. Colours are **linear** numbers from 0 to 1, proportional to light energy, not the sRGB numbers a screen uses (see [Common mistakes](#common-mistakes)).
 
@@ -181,7 +182,7 @@ $$u = x + s - w\cdot\text{brick},\quad v = y - h\cdot \text{row},\qquad \text{jo
 
 **A rug's border** (`rug_material` in `furn.py`) uses the rug's own coordinates $u, v \in [0, 1]$ across its width and length. The distance to the nearest edge is $\min(u, 1-u)$; the border band is where that lies between 0.035 and 0.047 (and, along the length, between 0.045 and 0.061). On the Arrival hall's 11 m rug that is a band 13 cm wide, 38.5 cm in from each side. At $u = 0.04,\ v = 0.5$: $\min(0.04, 0.96) = 0.04$, which is inside $(0.035, 0.047)$, while along the length $\min(0.5, 0.5) = 0.5$ is in the plain field: border colour.
 
-These are comparisons, so their edges are perfectly sharp, one pixel jagged. A live renderer usually replaces each `<` by a `smoothstep` over the width of one pixel; whether the new Crown does is unknown yet.
+These are comparisons, so their edges are perfectly sharp, one pixel jagged. A live renderer usually replaces each `<` by a `smoothstep` over the width of one pixel; the new Crown does this for its slab joints (see [below](#the-new-crown-page-what-it-actually-computes)).
 
 #### 6. Waves: bands and rings
 
@@ -289,9 +290,9 @@ with $w$ the coat's weight (a common energy-preserving approximation; Blender's 
 
 $$D_\text{sheen}(\mathbf h) = \frac{(2 + 1/\alpha)\,\sin^{1/\alpha}\theta_h}{2\pi},\qquad \alpha = \text{sheen roughness}^2,$$
 
-with Neubelt and Pettineo's (2013) visibility $V = 1/\big(4(\mathbf n\cdot\mathbf l + \mathbf n\cdot\mathbf v - (\mathbf n\cdot\mathbf l)(\mathbf n\cdot\mathbf v))\big)$. Blender 4 uses a different, newer sheen, the microfiber model of Zeltner, Burley and Chiang (2022), fitted to simulations of fibres with linearly transformed cosines. The Crown's wool rugs: roughness 1.0 (no shine at all), sheen weight 1.0, sheen roughness 0.5. Which of the two the new page will use is unknown: three.js offers only Charlie.
+with Neubelt and Pettineo's (2013) visibility $V = 1/\big(4(\mathbf n\cdot\mathbf l + \mathbf n\cdot\mathbf v - (\mathbf n\cdot\mathbf l)(\mathbf n\cdot\mathbf v))\big)$. Blender 4 uses a different, newer sheen, the microfiber model of Zeltner, Burley and Chiang (2022), fitted to simulations of fibres with linearly transformed cosines. The Crown's wool rugs: roughness 1.0 (no shine at all), sheen weight 1.0, sheen roughness 0.5. The new Crown page uses neither: it brightens the rug by a simple rule at grazing angles (see [below](#the-new-crown-page-what-it-actually-computes)).
 
-**Glass.** A ray reaching glass is split: $F$ reflected, $1 - F$ refracted into it (bent by Snell's law) and out the other side. The old Blender recipe (`lib.glass`) has a deliberate trick: **the camera and reflections see real glass, every other ray passes straight through as if the window were open**. Real glass bends and focuses sunlight into caustics, which a path tracer finds only with great noise; skipping that let sunlight and shadows come through the Crown's windows cleanly, at the cost of tiny physical errors in the light on the floor (4% too much, by the $F_0$ above). In a browser the usual tool is three.js's `transmission`, which blurs and bends what is behind the object using a picture of the scene drawn just before; what the new Crown will use is unknown yet.
+**Glass.** A ray reaching glass is split: $F$ reflected, $1 - F$ refracted into it (bent by Snell's law) and out the other side. The old Blender recipe (`lib.glass`) has a deliberate trick: **the camera and reflections see real glass, every other ray passes straight through as if the window were open**. Real glass bends and focuses sunlight into caustics, which a path tracer finds only with great noise; skipping that let sunlight and shadows come through the Crown's windows cleanly, at the cost of tiny physical errors in the light on the floor (4% too much, by the $F_0$ above). In a browser the usual tool is three.js's `transmission`, which blurs and bends what is behind the object using a picture of the scene drawn just before; the new Crown uses neither: its glass is a see-through layer whose opacity is its Fresnel reflection (see [below](#the-new-crown-page-what-it-actually-computes)).
 
 #### 12. All the light in the room
 
@@ -303,9 +304,47 @@ and $L_i$ is itself the $L_o$ of some other point, so the equation calls itself.
 
 **How Blender solves it (today's page).** Cycles is a **path tracer**: it estimates the integral by **Monte Carlo**, following random paths of light, $N$ per pixel, and averaging. The average's error shrinks like $1/\sqrt N$ ([law of large numbers](https://math.akadian.ca/books/probability/07-Inequalities-and-the-Law-of-Large-Numbers.html), [central limit theorem](https://math.akadian.ca/books/probability/12-The-Central-Limit-Theorem.html)), so halving the grain costs four times the work. The Crown's renders used up to 192 paths a pixel, up to 4 diffuse and 4 glossy bounces, adaptive sampling (stop a pixel once its estimated noise is below 0.025) and Intel's Open Image Denoise to clean the rest (`lib.py`, `reset()` and `render()`). The sky is Nishita's physical sky model (1993: sunlight scattered by air, dust and ozone) and the sun a disc 0.53° wide, so shadows have soft edges. That costs minutes per picture on a CPU, which is why the result was **baked**: saved into pictures once. Walking the whole ring of today's page downloads 199 MB, mostly those saved pictures and the models that carry them (measured 12 November 2026).
 
-**How a live page approximates it.** A browser has about 16 ms per frame, so it cannot trace hundreds of paths per pixel. Standard real-time tools, all available in three.js: the sun's direct light exactly as in section 8, with **shadow maps** (draw the scene from the sun, store depths, and compare); light from the sky and from bounces through **environment maps** prefiltered by roughness (the "split-sum" of Karis 2013) or **light probes** (a few numbers per point of a grid, often spherical harmonics); reflections in the floor by **screen-space reflections** or a mirrored camera; and a **tone map** at the end to squeeze bright light into what a screen shows (Blender used AgX, which three.js r186 also has). Which of these the new Crown uses is being decided in its rewrite; the plan on 12 November 2026 was a live sun with real shadows, bounced light computed in the browser on a grid, floor reflections and a Mars sky, but none of it is final.
+**How a live page approximates it.** A browser has about 16 ms per frame, so it cannot trace hundreds of paths per pixel. Standard real-time tools, all available in three.js: the sun's direct light exactly as in section 8, with **shadow maps** (draw the scene from the sun, store depths, and compare); light from the sky and from bounces through **environment maps** prefiltered by roughness (the "split-sum" of Karis 2013) or **light probes** (a few numbers per point of a grid, often spherical harmonics); reflections in the floor by **screen-space reflections** or a mirrored camera; and a **tone map** at the end to squeeze bright light into what a screen shows (Blender used AgX, which three.js r186 also has). What the new Crown chose is in the next section.
 
-### Putting it together: the six recipes
+### The new Crown page: what it actually computes
+
+*Read from the code on 12 November 2026: Arcadia City repository, `palace/crown/formula/` (`shaders.js`, `mats.js`, `gi.js`, `light.js`), commit 4f07b86. The page is at a test address and not public yet, so this can still change.*
+
+The rewrite does not use three.js's ready-made materials. Every surface is drawn by **one shader** with a switch on the material's kind, and the colours and roughness numbers come from the old Blender recipes (`mats.js`). The formulas are simpler and cheaper than Blender's, because they must run 60 times a second.
+
+**The noise it uses.** Not Perlin's gradient noise but **value noise** (section 2), with a hash of Dave Hoskins's "hash without sine" kind (multiply by small constants, take fractions: `p = fract(p * 0.1031); p += dot(p, p.zyx + 31.32); h = fract((p.x + p.y) * p.z)`), and the older blend curve $3t^2 - 2t^3$ instead of Perlin's quintic. At $t = 0.3$ that gives $3(0.09) - 2(0.027) = 0.216$ where the quintic gave 0.163. Its fBm has **4 octaves**, each $\times 2.03$ finer (not exactly 2, and shifted by 7.1 each time, so the octaves' grids never line up) and half as strong, divided by $0.5 + 0.25 + 0.125 + 0.0625 = 0.9375$ to stay in $[0, 1]$. Cells (Voronoi $F_1$, 3 × 3 squares) are used only for the soil.
+
+**Anti-aliasing, built in.** Every fine pattern is multiplied by
+
+$$\operatorname{fade}(P, s) = \operatorname{clamp}\big(1 - 0.9\, s\, w,\ 0,\ 1\big),$$
+
+where $s$ is the pattern's frequency per metre and $w$ = `fwidth(P)`, how far apart neighbouring pixels are on the surface (the graphics card gives it for free). This is the cure for the first [common mistake](#common-mistakes): the basalt's grain ($s = 260$) is at full strength up close, at $1 - 0.9 \cdot 260 \cdot 0.001 \approx 0.77$ when a pixel covers 1 mm, and gone (replaced by its average) once a pixel covers $1/(0.9\cdot 260)$ m $\approx 4.3$ mm.
+
+| Material | What the new page computes |
+|---|---|
+| **Basalt floor** | Slabs in **ring coordinates**: $q = (125\,\beta/1.2,\ r/0.6)$, with $\beta$ the bearing in radians and $r$ the distance from the ring's centre, every other row shifted by half. So slabs are 1.2 m long at radius 125 m (longer outside, shorter inside, as stone laid round a ring would be) and 0.6 m deep. Each slab's tone is $0.9 + 0.1\cdot\text{hash}(\text{slab})$. Joints by a `smoothstep` widened by `fwidth`, fading out in the distance. Grain: value noise at 260 per metre, faded as above; clouds: fBm at 0.7 per metre; colour between the old ramp's two ends. Roughness $0.13 + 0.14\cdot$fBm(3 per metre), 0.5 on the joints. The "coat" 0.4 raises $F_0$ from 0.04 to $0.04 + 0.04\cdot 0.4 = 0.056$; there is no separate coat highlight. The floor **mirrors the room**: the room is drawn a second time from under the floor into a picture, and that picture is read back blurred by roughness (mip level $8\times$roughness, five samples). |
+| **Plaster, ceiling** | colour $\times\big(1 + 0.06\,(\text{fBm}(1.3P) - 0.5)\big)$ (the ceiling 0.05 at 0.9 per metre); bump from fBm at 55 per metre, faded; roughness 0.9 and 0.92. |
+| **Bronze** | a plain metal: $F_0$ = (0.40, 0.29, 0.19), roughness 0.35, colour wandering $\pm4\%$ with fBm at 2 per metre; no patina, no bump. |
+| **Glass** | not refracted: a see-through layer whose opacity is $0.9F + 0.03$ with Schlick's $F = 0.04 + 0.96(1 - \mathbf n\cdot\mathbf v)^5$, showing the bounced light seen along the reflection plus a sharp sun glint ($(\mathbf r\cdot\mathbf l)^{3000}$). Head-on: 4% reflection, 6.6% opaque. A frosted variant glows with the light on both its sides. |
+| **Cognac leather** | colour wandering $\pm16\%$ with value noise at 3.5 per metre, and roughness from 0.34 to 0.52 by the same noise (as in Blender); grain: a bump from value noise at 300 and 60 per metre (not Voronoi cells); coat 0.25, so $F_0 = 0.05$. |
+| **Wool rug** | the same border band as Blender (0.035 to 0.047 across, 0.045 to 0.061 along); the field darkened up to 70% of the way towards 0.82 of itself by fBm at 2.5 per metre; pile bump from value noise at 240 per metre; roughness 0.95. **Sheen** is a rule of thumb, not a sheen BRDF: colour $\times\big(1 + 0.5(1 - \mathbf n\cdot\mathbf v)^3\big)$, so $\times 1.06$ seen at 60° from straight on and $\times 1.28$ at 80°. |
+| Also | walnut and oak: rings $\operatorname{fract}(6(y+z) + 3\,\text{fBm})$ along the grain; travertine: beds and pits; bark: noise in the branch's own coordinates; leaves: a colour picked by each leaf's random number, light through the back; alabaster: $\tfrac12 + \tfrac12\sin(9y + 10\,\text{fBm})$ veins that glow. |
+
+**The bump** is the same surface-gradient formula as Blender's (section 7), with the screen derivatives `dFdx`, `dFdy` of the position and of the height (Mikkelsen, 2010, "Bump Mapping Unparametrized Surfaces on the GPU").
+
+**The light on a surface.**
+
+- **Diffuse**: Lambert, colour $\times\ (\mathbf n\cdot\mathbf l)\times$ the light, metals none.
+- **Specular**: GGX for $D$ and Schlick for $F$, as in section 10, with $\alpha = \text{roughness}^2$. The shadowing term is its own simplification built on the Schlick–GGX form $\frac{\mathbf n\cdot\mathbf l}{(\mathbf n\cdot\mathbf l)(1-k)+k}$ with Karis's $k = (\text{roughness}+1)^2/8$ (2013), combined with a denominator and a factor 0.75 that are not one of the published forms; why those constants were chosen is not written in the code.
+- **Reflections of the room**: what a mirror would see, from the light probes below, weighted by Schlick's Fresnel whose grazing value is lowered for rough surfaces, $F_0 + (\max(1 - \text{roughness}, F_0) - F_0)(1 - \mathbf n\cdot\mathbf v)^5$ (a known shortcut, as in Lagarde's notes), so a matte wall does not turn into a mirror at a grazing angle.
+- **The sun's shadow**: one **shadow map** drawn from the sun when it moves, read with **PCSS** (Fernando, NVIDIA, 2005): first search how far in front the blocker stands, then blur the shadow's edge by that, since the sun is a disc and not a point; 8 + 16 samples on a spiral turned by "interleaved gradient noise" per pixel (Jimenez, 2014), and a bias from the receiver plane's slope so a floor the sun grazes does not shadow itself.
+- **Lamps**: points and spots with a smooth cut-off at a range, and "lines of light" round the ring for the coves and wall washers.
+- **Bounced light**: about 2,000 **light probes** on a grid in ring coordinates (a layer every 1.6 m along the ring, closer on either side of a wall so light does not leak between rooms; 10 across; 8 up, closer near the floor). In a background worker, 192 rays leave each probe evenly over the sphere and are traced against a **bounding-volume hierarchy** (a tree of boxes over the triangles, split at the middle of the longest side, at most 4 triangles a leaf); each hit point is lit by the sun (with a shadow ray), the lamps and the previous round's bounced light; **three rounds** make three bounces. Each probe keeps 4 numbers per colour, the first two bands of **spherical harmonics** (the mean light and its lean, "L1"), and surfaces read them back between probes with a non-linear fit that never goes below zero (its author describes it as Geomerics' non-linear L1 fit). This is the live version of section 12's integral: few directions, few bounces, worked out once per time of day.
+- **After the picture**: screen-space ambient occlusion (12 samples, blurred, the soft dark in corners), bloom (shrink, spread, add back), AgX tone mapping like Blender's, a slight vignette and a dither of $\pm\tfrac12$ of a step against banding. The sky is an analytic gradient from butterscotch to darker overhead with blue glow round the sun (exponential halos) and hashed stars, not Nishita's physical model.
+
+What it does not have yet, from its own notes: the rest of the ring, and a speed check on a real graphics card.
+
+### The old Blender recipes in one table
 
 Exactly as in the old Blender code (linear colours; roughness 0 = mirror, 1 = matte).
 
@@ -318,7 +357,7 @@ Exactly as in the old Blender code (linear colours; roughness 0 = mirror, 1 = ma
 | **Cognac leather** (`seating.fabric`, "leather") | colour (0.30, 0.14, 0.06) varied ±16% by fBm(Scale 3.5, Detail 4); grain: cells at Scale 520 as bump, Strength 0.18 | not metal; roughness from the same fBm mapped to 0.34 to 0.52; clear coat 0.25, roughness 0.35 |
 | **Wool rug, dark** (`furn.rug_material`) | field (0.24, 0.20, 0.17) blended up to 35% towards a copy about 20% darker by fBm(Scale 2.5, Detail 6); border band (0.50, 0.44, 0.36); pile bump fBm(Scale 900), Strength 0.6 | roughness 1.0; sheen 1.0, sheen roughness 0.5 |
 
-In the new browser Crown, these patterns would be either written as shader code (like the GLSL above) or built from three.js's node functions, which include MaterialX's noise (`mx_perlin_noise_float`, `mx_fractal_noise_float`, `mx_worley_noise_float`; all present in the engine's copy of three.js r186). The user has asked for a **new design, not a copy** of the old Crown, so the final numbers may differ; this table is the starting point, not the finished page.
+The new Crown page starts from the same colours and roughness values (its `mats.js` copies them) but computes the patterns with simpler formulas of its own, as the previous section shows.
 
 ### What it costs
 
@@ -409,6 +448,9 @@ Per pixel, per frame: one 3D gradient noise is 8 hashes and dot products and 7 b
 - Estevez, A. and Kulla, C. "Production Friendly Microfacet Sheen BRDF." Sony Pictures Imageworks, 2017; Neubelt, D. and Pettineo, M. "Crafting a Next-Gen Material Pipeline for The Order: 1886." SIGGRAPH 2013 course; Zeltner, T., Burley, B. and Chiang, M. "Practical Multiple-Scattering Sheen Using Linearly Transformed Cosines." SIGGRAPH 2022 talk.
 - Hoffman, N. "Generalization of Adobe's Fresnel Model." 2019 (the F82-tint metal Fresnel).
 - Kajiya, J. "The Rendering Equation." SIGGRAPH 1986.
+- Mikkelsen, M. "Bump Mapping Unparametrized Surfaces on the GPU." *Journal of Graphics, GPU, and Game Tools* 15 (2010).
+- Fernando, R. "Percentage-Closer Soft Shadows." SIGGRAPH 2005 sketch; Jimenez, J. "Next Generation Post Processing in Call of Duty: Advanced Warfare." SIGGRAPH 2014 course (interleaved gradient noise).
+- The new Crown page: Arcadia City repository, `palace/crown/formula/` (`shaders.js`, `mats.js`, `gi.js`, `light.js`), commit 4f07b86, read 12 November 2026.
 - Nishita, T. and others. "Display of the Earth Taking into Account Atmospheric Scattering." SIGGRAPH 1993.
 - Blender source, Cycles kernel (`noise.h`, `fractal_noise.h`, `voronoi.h`, `wave.h`, `brick.h`, `displace.h`, `closure.h`), and three.js r186 source (`D_GGX`, `V_GGX_SmithCorrelated`, `F_Schlick`, `D_Charlie`, `V_Neubelt`), read 12 November 2026.
 - The Crown's recipes: Arcadia City art repository, `tools/render/lib.py`, `crown_rooms.py`, `seating.py`, `furn.py`, read 12 November 2026.
